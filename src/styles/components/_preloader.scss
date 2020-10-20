@@ -1,0 +1,100 @@
+.preloader {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: $denim;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include media ('<tb') {
+		display: none;
+	}
+
+	&__row {
+		position: relative;
+		width: 450px;
+		height: 450px;
+		text-align: center;
+		animation: scale-pre 1s linear both;
+	}
+
+	&__item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		animation: rotation 5s infinite linear;
+
+		&:last-child {
+			width: 262px;
+			height: auto;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			
+			animation-name: fade-effect;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: 1;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.loaded .preloader {
+	right: -200%;
+	transition: .5s;
+	visibility: hidden;
+
+	.preloader__row {
+		animation: scale-pre-rev 0.2s linear both;
+	}
+}
+
+
+@keyframes scale-pre {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes scale-pre-rev {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes rotation {
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+@keyframes fade-effect {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

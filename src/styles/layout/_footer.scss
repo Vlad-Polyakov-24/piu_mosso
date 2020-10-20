@@ -1,0 +1,210 @@
+/* footer */
+
+.footer {
+	margin-top: auto;
+	background-color: #1A2E53;
+	padding-top: 30px;
+	padding-bottom: 10px;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__logo {
+		margin-bottom: 20px;
+		cursor: pointer;
+
+		svg,path {
+			display: block;
+			width: 100%;
+		}
+
+		@include media ('<desktop_lg') {
+			width: 280px;
+			margin-bottom: 27px;
+		}
+
+		@include media ('<dt-min') {
+			width: 260px;
+			margin-bottom: 12px;
+		}
+
+		@include media ('<tb') {
+			width: 220px;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__social {
+		display: flex;
+		margin: 0 -21px 25px;
+
+		@include media ('<tb') {
+			flex-direction: column;
+			margin: 0 -21px 18px;
+		}
+	}
+
+	&__social-list {
+		display: flex;
+		margin: 0 -10px;
+		padding: 0 21px;
+
+		li {
+			padding: 0 10px;
+			width: 100%;
+
+			@include media ('<tb') {
+				padding: 0 15px;
+			}
+		}
+
+		@include media ('<desktop_lg') {
+			margin: 0;
+			padding: 0;
+		}
+
+		@include media ('<tb') {
+			margin: 0 0px 11px;
+			padding: 0;
+		}
+	}
+
+	&__social-link {
+		display: flex;
+		
+		@at-root :root.hover &:hover {
+			
+			svg,path {
+				transition: .4s;
+				fill: $royal;
+			}
+		}
+
+		svg,path {
+			width: 20px;
+			height: 20px;
+
+			@include media ('<dt-min') {
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+
+	&__contacts-list {
+		margin: 0 -10px;
+		padding: 0 21px;
+		display: flex;
+
+		li {
+			padding: 0 10px;
+
+			@include media ('<tb') {
+				padding: 0 20px;
+			}
+		}
+
+		@include media ('<desktop_lg') {
+			margin: 0;
+			padding: 0px 19px;
+		}
+
+		@include media ('<tb') {
+			margin: 0 -20px;
+			padding: 0;
+			justify-content: center;
+		}
+	}
+
+	&__contacts-link {
+		font-size: 12px;
+		line-height: 17px;
+		font-weight: 500;
+		color: $white;
+		transition: .4s;
+
+		@at-root :root.hover &:hover{
+			color: #FFDC98;
+		}
+	}
+
+	&__menu-list {
+		display: flex;
+		margin: 0 -30px 30px;
+		flex-wrap: wrap;
+
+		li {
+			padding: 0 30px;
+
+			@include media ('<desktop_lg') {
+				padding: 0 25px;
+			}
+
+			@include media ('<dt-min') {
+				padding: 10px 0;
+			}
+		}
+
+		@include media ('<dt-min') {
+			margin: -10px 0 20px;
+
+			li {
+				flex: 25%;
+			}
+		}
+
+		@include media ('<tb') {
+			margin: 0px 0 20px;
+
+			li {
+				flex: 50%;
+			}
+		}
+	}
+	
+	&__menu-link {
+		font-size: 16px;
+		line-height: 23px;
+		color: $white;
+		transition: .4s;
+		display: block;
+
+		@at-root :root.hover &:hover{
+			color: #FFDC98;
+		}
+
+		@include media ('<dt-min') {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&__copyright {
+		font-size: 12px;
+		line-height: 17px;
+		color: $white;
+		font-weight: 500;
+
+		@include media ('<dt-min') {
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		@include media ('<tb') {
+			font-size: 12px;
+			line-height: 17px;
+		}
+	}
+
+	@include media ('<desktop_lg') {
+		padding-top: 27px;
+	}
+
+	@include media ('<tb') {
+		padding-top: 18px;
+	}
+}

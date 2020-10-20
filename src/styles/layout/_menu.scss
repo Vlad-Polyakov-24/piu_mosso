@@ -1,0 +1,205 @@
+.top-all {
+
+	&__row {
+		display: flex;
+		position: relative;
+		align-items: flex-start;
+		overflow: hidden;
+	}
+
+	&__welcome {
+		width: 260px;
+		height: 440px;
+		background-color: #1A2E53;
+
+		@include media ('<desktop_lg') {
+			width: 184px;
+			height: 380px;
+		}
+
+		@include media ('<dt-min') {
+			width: 144px;
+			height: 320px;
+		}
+
+		@include media ('<tb') {
+			width: 53px;
+			height: 220px;
+		}
+	}
+
+	&__image-wrap {
+		width: calc(100% - 260px);
+		height: 500px;
+
+		@include media ('<desktop_lg') {
+			height: 440px;
+			width: calc(100% - 184px);
+		}
+	
+		@include media ('<dt-min') {
+			height: 380px;
+			width: calc(100% - 144px);
+		}
+	
+		@include media ('<tb') {
+			height: 260px;
+			width: calc(100% - 53px);
+		}
+	}
+
+	&__image {
+		position: relative;
+		height: 100%;
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			object-fit: cover;
+			object-position: center;
+			font-family: 'object-fit: cover; object-position: center;';
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		top: 132px;
+		left: 150px;
+		z-index: 2;
+		max-width: 557px;
+		width: 100%;
+
+		svg,path {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		@include media ('<=dt-min') {
+			max-width: 402px;
+			top: 112px;
+			left: 104px;
+		}
+
+		@include media ('<=tb') {
+			max-width: 299px;
+			left: 91px;
+		}
+
+		@include media ('<tb') {
+			max-width: 170px;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.menu-menu {
+
+	&.sc-pd {
+		padding-top: 80px;
+		padding-bottom: 0px;
+	
+		@include media ('<desktop_lg') {
+			padding-top: 60px;
+		}
+	
+		@include media ('<tb') {
+			padding-top: 40px;
+		}
+	}
+
+	@include media ('<desktop_lg') {
+		display: none;
+	}
+}
+
+
+
+.menu-price {
+	background: url('/images/concept/concept-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	.section-title {
+		margin-bottom: 80px;
+
+		@include media ('<desktop_lg') {
+			margin-bottom: 60px;
+		}
+
+		@include media ('<tb') {
+			margin-bottom: 40px;
+		}
+	}
+
+	.block-title {
+		color: $denim;
+	}
+
+	.mr30 {
+
+		@include media ('<tb') {
+			margin-bottom: 10px;
+		}
+	}
+
+	.hr {
+		background-color: $oat;
+		width: 100%;
+		margin: 40px 0;
+		height: 2px;
+
+		&:last-child {
+			margin: 40px 0 0 0;
+
+			@include media ('<desktop_lg') {
+				margin: 30px 0 0 0;
+			}
+		
+			@include media ('<tb') {
+				margin: 20px 0 0 0;
+			}
+		}
+
+		@include media ('<desktop_lg') {
+			margin: 30px 0;
+		}
+	
+		@include media ('<tb') {
+			margin: 20px 0;
+		}
+	}
+
+	&__column {
+	}
+
+	&__list {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item-left {
+	}
+
+	&__item-left--min {
+		font-size: 16px;
+		line-height: 23px;
+		font-weight: 400;
+	}
+
+	&__item-right {
+	}
+
+}

@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*!* helpers parts *!*/
+@import "helpers/all";
+
+/*!* components *!*/
+@import "components/fonts";
+@import "components/reset";
+@import "components/app";
+@import "components/buttons";
+@import "components/titles";
+@import "components/preloader";
+
+/*!* layout parts *!*/
+@import "layout/header";
+@import "layout/footer";
+@import "layout/main";
+@import "layout/404";
+@import "layout/menu";
+@import "layout/contacts";
+@import "layout/gallery";
+@import "layout/staff";
+@import "layout/voice";
+@import "layout/youtube";

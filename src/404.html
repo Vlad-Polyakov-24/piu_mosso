@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+	<meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- og format -->
+	<meta property="og:title" content="">
+	<!-- bar color -->
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+	<title>Error 404</title>
+</head>
+
+<body>
+	<div class="preloader">
+		<div class="preloader__row">
+			<div class="preloader__item">
+				<img src="/images/preloader/preloader-bg.png" alt="preloader-bg">
+			</div>
+			<div class="preloader__item">
+				<img src="/images/preloader/preloader-logo.png" alt="preloader-logo">
+			</div>
+		</div>
+	</div>
+	<div class="wrapper" id="wrapper">
+		<%= _.template(require('./parts/header.html'))() %>
+		<div class="app" id="app">
+			<section class="error">
+				<div class="container">
+					<div class="error__wrap">
+						<h2 class="section-title">ooops... page not found</h2>
+						<div class="error__404-image">
+							<img src="/images/404/404.png" alt="error-404">
+						</div>
+						<a href="/index.html" class="btn"><span>トップページへ戻る</span><span class="error__btn-ico"><svg width="32"
+									height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M23.4683 0L32 9H0V7.98346H29.6735L22.7869 0.718803L23.4683 0Z" fill="#C06B1B" />
+								</svg></span></a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<%= _.template(require('./parts/footer.html'))() %>
+	</div>
+</body>
+
+</html>

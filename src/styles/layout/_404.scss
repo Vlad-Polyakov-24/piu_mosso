@@ -1,0 +1,56 @@
+.error {
+	background-color: $denim;
+	background-image: url('/images/404/castle.png');
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 142px;
+	padding-bottom: 120px;
+
+	margin-top: -1px;
+	margin-bottom: -1px;
+
+	@include media ('<tb') {
+		padding-top: 80px;
+		padding-bottom: 60px;
+	}
+
+	.section-title {
+		color: $white;
+		margin-bottom: 36px;
+		padding-top: 0;
+		background: none;
+	}
+
+	.btn {
+		max-width: 357px;
+		padding: 22px 10px;
+	}
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__404-image {
+		max-width: 248px;
+		width: 100%;
+		margin-bottom: 57px;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&__btn-ico {
+		width: 32px;
+		margin-left: 50px;
+
+		svg,path {
+			display: block;
+			width: 100%;
+		}
+	}
+}

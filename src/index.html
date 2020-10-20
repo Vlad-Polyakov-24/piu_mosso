@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+	<meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- og format -->
+	<meta property="og:title" content="">
+	<!-- bar color -->
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+	<title>Home</title>
+</head>
+
+<body>
+	<div class="preloader">
+		<div class="preloader__row">
+			<div class="preloader__item">
+				<img src="/images/preloader/preloader-bg.png" alt="preloader-bg">
+			</div>
+			<div class="preloader__item">
+				<img src="/images/preloader/preloader-logo.png" alt="preloader-logo">
+			</div>
+		</div>
+	</div>
+	<div class="wrapper" id="wrapper">
+		<%= _.template(require('./parts/header.html'))() %>
+		<div class="app" id="app">
+			<section class="top">
+				<div class="top__work">
+					<div class="container">
+						<ul class="top__work-list">
+							<li class="top__work-item"><span class="top__spn-ico">営業時間</span><span class="top__spn-txt">9:00 ～
+									19:00</span></li>
+							<li class="top__work-item"><span class="top__spn-ico">最終受付</span><span class="top__spn-txt">カット
+									18:00 カラー・パーマ 17:00</span></li>
+							<li class="top__work-item"><span class="top__spn-ico">定休日</span><span
+									class="top__spn-txt">火曜日</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="top__row">
+					<div class="top__welcome">
+						<span>
+							<svg width="55" height="620" viewBox="0 0 55 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1.22704 545.31L1.22704 563.47H3.75328L4.76378 555.855L44.0289 566.399L4.6916 578.921L3.75328 570.793H1.22704L1.22704 591.515H3.75328L4.61942 583.461L43.7402 596.202L4.61942 606.746L3.75328 599.204H1.22704L1.22704 620H3.75328L4.47507 613.117L54.4226 598.838V596.055L11.7651 582.655L54.4226 568.669V565.813L4.6916 552.34L3.75328 545.31H1.22704Z"
+									fill="#446379" />
+								<path
+									d="M40.2034 465.065L50.5971 466.969V488.424C43.5958 488.643 36.5223 488.643 28.5105 488.643V475.756L36.0892 474.731V471.728H17.8281V474.731L25.6234 475.829V488.643C18.2612 488.643 11.1877 488.643 4.40289 488.424L4.40289 468.433L14.7966 466.456V462.868L1.22704 463.381L1.22704 502.556H3.75328L4.54725 494.941C11.4764 494.721 18.5499 494.721 25.5512 494.721H29.521C36.5945 494.721 43.5958 494.721 50.4528 494.941L51.2467 502.556H53.8451V461.916L40.2034 461.404V465.065Z"
+									fill="#446379" />
+								<path
+									d="M39.4816 380.69L50.5971 383.033V402.364C43.7402 402.584 36.811 402.584 30.9646 402.584H25.9121C18.5499 402.584 11.4764 402.584 4.54725 402.364L3.75328 394.749H1.22704L1.22704 416.497H3.75328L4.54725 408.881C11.4042 408.662 18.4055 408.662 25.5512 408.662H29.5932C36.5223 408.662 43.5236 408.662 50.4528 408.881L51.2467 416.497H53.8451V377.468L39.4816 376.809V380.69Z"
+									fill="#446379" />
+								<path
+									d="M39.6982 293.55L49.5144 295.307C51.1024 298.603 51.752 302.044 51.752 305.413C51.752 317.055 43.0905 325.33 27.5 325.33C12.0538 325.33 3.24803 316.543 3.24803 304.9C3.24803 301.971 3.89764 299.042 5.48557 296.04L15.2297 294.282V290.255L3.89764 290.548C0.866144 295.747 0 300.946 0 305.705C0 321.156 11.5486 332.506 27.5 332.506C43.668 332.506 55 321.669 55 305.705C55 300.067 53.9173 294.795 51.1024 289.816L39.6982 289.596V293.55Z"
+									fill="#446379" />
+								<path
+									d="M27.5 236.696C15.0853 236.696 3.24803 231.277 3.24803 219.708C3.24803 208.285 15.0853 202.866 27.5 202.866C39.9869 202.866 51.8241 208.285 51.8241 219.708C51.8241 231.277 39.9869 236.696 27.5 236.696ZM0 219.708C0 232.229 10.4659 243.872 27.5 243.872C45.1115 243.872 55 232.302 55 219.708C55 207.259 44.6063 195.763 27.5 195.763C9.88845 195.763 0 207.259 0 219.708Z"
+									fill="#446379" />
+								<path
+									d="M3.75328 86.8094H1.22704L1.22704 101.308L45.9777 119.321L1.22704 137.994L1.22704 151.614H3.75328L4.61942 144.218L50.3806 144.291L51.2467 151.394H53.8451V133.747H51.2467L50.3806 140.849H24.7572C24.685 140.849 15.1575 141.069 8.30052 141.216L53.8451 122.031V119.028L8.01181 100.576L29.7375 100.649C36.5945 100.722 43.5958 100.649 50.5249 100.795L51.2467 107.971H53.8451L53.8451 86.8094H51.2467L50.5249 94.4248C43.5236 94.5712 36.5223 94.5713 29.521 94.5713H25.5512C18.4055 94.5713 11.4042 94.5712 4.54725 94.4248L3.75328 86.8094Z"
+									fill="#446379" />
+								<path
+									d="M40.2034 3.66119L50.5971 5.56506V27.02C43.5958 27.2396 36.5223 27.2397 28.5105 27.2397V14.3521L36.0892 13.3269V10.3247H17.8281L17.8281 13.3269L25.6234 14.4253V27.2397C18.2612 27.2397 11.1877 27.2396 4.40289 27.02L4.40289 7.02954L14.7966 5.05249V1.46448L1.22704 1.97705L1.22704 41.1525H3.75328L4.54725 33.537C11.4764 33.3174 18.5499 33.3174 25.5512 33.3174H29.521C36.5945 33.3174 43.5958 33.3174 50.4528 33.537L51.2467 41.1525H53.8451V0.512573L40.2034 0V3.66119Z"
+									fill="#446379" />
+							</svg>
+						</span>
+					</div>
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="swiper-slide-image" style="background-image: url('/images/top/top__gallery-1.jpg')">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="swiper-slide-image" style="background-image: url('/images/top/top__gallery-2.jpg')">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="swiper-slide-image" style="background-image: url('/images/top/top__gallery-3.jpg')">
+								</div>
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+					<strong class="top__logo">
+						<svg width="664" height="201" viewBox="0 0 664 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M227.43 195.431C227.43 197.168 228.07 197.991 229.258 197.991V200.002H218.379V197.991C219.568 197.991 220.208 197.168 220.208 195.431V168.829C220.025 167.457 218.836 166.726 216.551 166.543V164.349C219.842 164.349 223.499 164.166 227.43 163.618V179.342C229.715 176.873 232.275 175.685 234.926 175.685C239.588 175.685 241.965 178.336 242.056 183.638V195.431C242.056 197.168 242.788 197.991 244.159 197.991V200.002H233.372V197.991C234.286 197.991 234.743 197.168 234.743 195.431V183.913C234.743 180.713 233.92 179.159 232.275 179.159C230.721 179.159 229.075 180.256 227.43 182.45V195.431Z"
+								fill="#FEFEFE" />
+							<path
+								d="M261.073 186.564C256.776 187.661 254.673 189.672 254.673 192.598C254.856 195.706 256.136 197.169 258.604 197.169C259.518 197.169 260.341 196.803 261.073 195.98V186.564ZM258.604 175.686C265.004 175.686 268.295 178.245 268.477 183.182V196.072C268.477 196.712 268.752 197.077 269.392 197.077C269.849 197.077 270.397 196.803 270.854 196.346L271.586 197.9C270.489 199.18 268.843 199.911 266.74 200.003C263.906 200.003 262.17 199.271 261.53 197.809C260.341 199.271 257.964 200.003 254.582 200.003C250.011 199.637 247.634 197.534 247.634 193.695C247.634 189.581 249.645 187.204 253.668 186.564C257.782 185.924 260.25 185.01 261.255 183.822V180.713C260.981 178.977 260.524 178.062 259.793 178.062C259.061 178.062 258.604 178.519 258.421 179.434C258.147 180.439 257.599 181.353 256.776 182.176C255.953 182.908 254.948 183.273 253.759 183.273C251.839 183.182 250.925 182.268 250.925 180.256C250.925 178.977 251.565 177.88 252.845 177.057C254.673 176.143 256.593 175.686 258.604 175.686Z"
+								fill="#FEFEFE" />
+							<path
+								d="M277.16 180.895C276.978 179.524 275.789 178.793 273.412 178.701V176.507C275.698 176.507 277.526 176.416 278.897 176.325C280.177 176.233 282.006 176.05 284.382 175.776V195.431C284.382 197.168 285.022 197.99 286.485 197.99V200.002H275.241V197.99C276.521 197.99 277.16 197.076 277.16 195.431V180.895ZM284.108 167C284.108 169.377 282.737 170.565 279.903 170.565C278.715 170.565 277.709 170.2 276.886 169.468C276.063 168.828 275.698 167.914 275.698 167C275.698 164.532 277.069 163.343 279.903 163.343C282.737 163.343 284.108 164.532 284.108 167Z"
+								fill="#FEFEFE" />
+							<path
+								d="M304.495 180.531C302.484 181.536 301.295 182.816 300.929 184.37V195.432C300.929 197.169 301.569 197.991 302.758 197.991V200.002H291.788V197.991C293.068 197.991 293.707 197.077 293.707 195.432V180.896C293.525 179.525 292.336 178.794 290.051 178.702V176.508C292.336 176.508 294.073 176.508 295.444 176.417C296.633 176.325 298.461 176.051 300.929 175.777V180.896C302.941 177.514 305.409 175.777 308.426 175.777C310.62 175.777 311.808 176.782 311.991 178.885C311.991 180.896 310.711 182.085 308.334 182.267C306.506 182.267 305.226 181.628 304.495 180.531Z"
+								fill="#FEFEFE" />
+							<path
+								d="M0.532841 15.7958L1.99552 15.613C7.2063 15.0645 9.76599 18.1727 9.76599 22.195V88.3811C9.67457 92.8606 6.01788 96.0602 1.99552 96.0602H0.441423L0.350006 97.2486H27.1353V96.0602H25.5812C21.5588 96.0602 17.9021 92.8606 17.7193 88.3811V15.8872C22.0159 15.1559 26.0383 14.2417 29.3293 13.876C43.7732 12.3219 53.6463 19.1782 54.1948 34.902C54.5605 46.4206 49.8068 55.928 40.4822 57.6649C34.3572 58.7619 26.2211 56.6593 24.2099 49.0717L23.1129 49.4374C24.3928 59.4019 33.0774 62.6929 41.305 62.2358C55.2918 61.3216 63.885 50.0773 63.3365 34.902C62.788 16.71 49.4411 7.65966 29.8778 10.1279C23.8443 10.8593 11.2287 13.419 0.350006 14.6074L0.532841 15.7958Z"
+								fill="#FEFEFE" />
+							<path
+								d="M101.731 96.0593H100.177C95.8803 96.0593 92.4064 92.6769 92.315 88.3803V20.5486C92.4064 16.3434 95.8803 12.8696 100.177 12.8696H101.731V11.6812H74.9457L75.0372 12.8696H76.4998C80.7964 12.8696 84.2703 16.3434 84.3617 20.5486V88.3803C84.2703 92.6769 80.7964 96.0593 76.4998 96.0593H75.0372L74.9457 97.2477H101.731V96.0593Z"
+								fill="#FEFEFE" />
+							<path
+								d="M176.237 11.6812V12.961H178.249C181.722 12.961 184.556 15.4293 184.648 18.8117V67.08C184.648 83.9008 173.769 95.1451 157.405 95.1451C141.864 95.1451 131.443 83.2609 131.443 65.4345V18.8117C131.626 15.3378 134.46 12.961 137.933 12.961H139.945V11.6812H115.079V12.961H117.09C120.564 12.961 123.49 15.4293 123.581 18.9945V67.2629C123.581 86.2777 137.111 98.9847 157.405 98.9847C177.243 98.9847 190.407 86.1862 190.407 67.08V18.7203C190.59 15.3378 193.424 12.961 196.898 12.961H198.817V11.6812H176.237Z"
+								fill="#FEFEFE" />
+							<path
+								d="M326.709 11.1339H325.612L293.159 83.902L263.997 20.8241C260.157 12.5965 248.639 -3.67575 228.07 0.895114V2.17496C242.696 0.255193 251.29 12.8708 256.409 22.9267L248.73 88.8385C247.999 93.4094 244.159 96.0605 239.954 96.0605H238.034V97.3404H261.437V96.1519H259.517C257.323 96.2433 254.581 93.8665 254.855 91.0326L260.249 31.0628L291.513 98.9859H292.61C293.433 93.9579 296.816 86.6445 296.816 86.6445L321.955 29.8744L329.269 83.7192C332.103 104.288 345.724 121.657 370.406 118.092V116.904C353.677 117.544 341.427 105.111 337.953 82.6222L326.709 11.1339Z"
+								fill="#FEFEFE" />
+							<path
+								d="M399.842 11.0427C372.417 11.0427 353.402 28.6863 353.402 55.0144C353.402 81.434 372.417 98.9862 399.842 98.9862C427.268 98.9862 446.282 81.434 446.282 55.0144C446.282 28.6863 427.268 11.0427 399.842 11.0427ZM399.842 95.3295C377.628 95.3295 362.818 79.24 362.818 55.0144C362.818 30.7889 377.628 14.6994 399.842 14.6994C422.057 14.6994 436.958 30.7889 436.958 55.0144C436.958 79.24 422.057 95.3295 399.842 95.3295Z"
+								fill="#FEFEFE" />
+							<path
+								d="M471.698 39.7478C467.95 36.1825 466.853 31.703 466.853 28.5948C466.853 21.19 472.795 14.6994 481.663 14.6994C489.25 14.6994 495.375 19.3617 495.284 27.1322H496.472V12.3226H491.627C488.427 11.5912 484.496 11.0427 481.297 11.0427C467.584 11.0427 460.088 21.2815 460.088 31.4288C460.088 36.1825 461.734 41.9418 466.67 46.4212L489.799 67.9043C492.815 70.7382 494.552 74.4863 494.552 79.1486C494.552 88.8388 487.148 94.8724 478.28 95.3295C467.584 95.9694 459.722 88.0161 460.911 75.5833H459.814C457.985 80.977 457.528 88.656 458.443 92.4041C463.196 97.3407 472.978 98.9862 478.92 98.9862C492.815 98.9862 501.5 89.753 501.5 76.4061C501.5 71.561 500.312 66.1674 495.467 61.6879L471.698 39.7478Z"
+								fill="#FEFEFE" />
+							<path
+								d="M529.2 39.7478C525.452 36.1825 524.355 31.703 524.355 28.5948C524.355 21.19 530.297 14.6994 539.165 14.6994C546.752 14.6994 552.786 19.3617 552.786 27.1322H553.974V12.3226H549.129C545.929 11.5912 541.998 11.0427 538.799 11.0427C525.086 11.0427 517.59 21.2815 517.59 31.4288C517.59 36.1825 519.236 41.9418 524.081 46.4212L547.301 67.9043C550.226 70.7382 551.963 74.4863 551.963 79.1486C551.963 88.8388 544.65 94.8724 535.782 95.3295C525.086 95.9694 517.224 88.0161 518.413 75.5833H517.316C515.487 80.977 515.03 88.656 515.945 92.4041C520.698 97.3407 530.48 98.9862 536.422 98.9862C550.317 98.9862 559.002 89.753 559.002 76.4061C559.002 71.561 557.814 66.1674 552.969 61.6879L529.2 39.7478Z"
+								fill="#FEFEFE" />
+							<path
+								d="M617.233 11.0427C589.808 11.0427 570.885 28.6863 570.885 55.0144C570.885 81.434 589.808 98.9862 617.233 98.9862C644.658 98.9862 663.673 81.434 663.673 55.0144C663.673 28.6863 644.658 11.0427 617.233 11.0427ZM617.233 95.3295C595.019 95.3295 580.209 79.24 580.209 55.0144C580.209 30.7889 595.019 14.6994 617.233 14.6994C639.539 14.6994 654.349 30.7889 654.349 55.0144C654.349 79.24 639.539 95.3295 617.233 95.3295Z"
+								fill="#FEFEFE" />
+							<path
+								d="M344.901 182.725H342.159C341.885 180.531 341.336 179.068 340.696 178.428C339.873 178.062 338.868 177.88 337.771 177.88C335.577 178.062 334.48 179.068 334.297 181.079C334.297 182.542 336.125 184.005 339.873 185.376C344.17 186.747 346.455 188.941 346.638 192.049C346.638 197.351 343.256 200.003 336.582 200.003C332.194 200.003 328.995 199.088 327.166 197.26V192.232H330C330.457 194.7 330.914 196.254 331.28 196.894C332.286 197.626 333.657 197.9 335.485 197.9C338.228 197.9 339.691 196.437 339.691 193.603C339.691 192.232 339.142 191.135 338.136 190.221C337.131 189.49 335.76 188.85 333.931 188.301C329.36 187.296 326.984 185.376 326.801 182.725C326.801 180.805 327.623 179.251 329.269 177.971C331.097 176.417 333.474 175.686 336.4 175.686C340.788 175.777 343.622 176.783 344.901 178.611V182.725Z"
+								fill="#FEFEFE" />
+							<path
+								d="M363.917 186.564C359.62 187.661 357.426 189.672 357.426 192.598C357.609 195.706 358.889 197.169 361.357 197.169C362.363 197.169 363.186 196.803 363.917 195.98V186.564ZM361.357 175.686C367.756 175.686 371.139 178.245 371.23 183.182V196.072C371.23 196.712 371.505 197.077 372.144 197.077C372.693 197.077 373.15 196.803 373.699 196.346L374.43 197.9C373.241 199.18 371.596 199.911 369.585 200.003C366.751 200.003 364.922 199.271 364.283 197.809C363.094 199.271 360.809 200.003 357.426 200.003C352.764 199.637 350.479 197.534 350.387 193.695C350.387 189.581 352.398 187.204 356.512 186.564C360.534 185.924 363.094 185.01 364.008 183.822V180.713C363.825 178.977 363.277 178.062 362.637 178.062C361.814 178.062 361.357 178.519 361.174 179.434C360.9 180.439 360.352 181.353 359.529 182.176C358.706 182.908 357.701 183.273 356.512 183.273C354.592 183.182 353.678 182.268 353.678 180.256C353.678 178.977 354.41 177.88 355.598 177.057C357.518 176.143 359.437 175.686 361.357 175.686Z"
+								fill="#FEFEFE" />
+							<path
+								d="M378.543 168.829C378.452 167.457 377.172 166.726 374.886 166.543V164.349C378.177 164.349 381.834 164.166 385.765 163.618V195.431C385.765 197.168 386.496 197.991 387.868 197.991V200.002H376.715V197.991C377.903 197.991 378.543 197.077 378.543 195.431V168.829Z"
+								fill="#FEFEFE" />
+							<path
+								d="M404.507 178.428C401.124 178.428 399.387 181.536 399.387 187.753C399.479 194.152 401.216 197.351 404.69 197.351C408.072 197.351 409.718 194.152 409.718 187.844C409.718 181.536 407.981 178.428 404.507 178.428ZM404.598 175.686C412.917 175.686 417.031 179.799 417.031 187.935C417.031 195.98 412.917 200.003 404.598 200.003C396.188 200.003 392.074 195.98 392.074 187.935C392.074 179.799 396.188 175.686 404.598 175.686Z"
+								fill="#FEFEFE" />
+							<path
+								d="M430.742 195.432C430.742 197.169 431.381 197.991 432.661 197.991V200.003H421.691V197.991C422.88 197.991 423.52 197.077 423.52 195.432V180.896C423.428 179.525 422.148 178.794 419.863 178.702V176.508C422.148 176.508 423.977 176.508 425.257 176.417C426.536 176.325 428.365 176.051 430.742 175.777V179.342C433.118 176.874 435.77 175.686 438.786 175.686C443.083 175.686 445.368 178.337 445.46 183.639V195.432C445.46 197.169 446.1 197.991 447.471 197.991V200.003H436.501V197.991C437.598 197.991 438.146 197.169 438.146 195.432V183.822C438.146 180.713 437.324 179.159 435.587 179.159C434.124 179.159 432.479 180.256 430.742 182.45V195.432Z"
+								fill="#FEFEFE" />
+						</svg>
+					</strong>
+					<div class="top__square-left">
+						<img src="/images/top/top-square-left.png" alt="top-square-left">
+					</div>
+					<div class="top__square-right">
+						<img src="/images/top/top-square-right.png" alt="top-square-right">
+					</div>
+				</div>
+			</section>
+			<section class="concept">
+				<div class="container">
+					<div class="concept__row-top">
+						<ul class="concept__row-top-list">
+							<li class="concept__row-top-list-item"><span>当店のホームページをご覧いただき、</span></li>
+							<li class="concept__row-top-list-item"><span>ありがとうございます。</span>
+							</li>
+							<li class="concept__row-top-list-item"><span>PIU MOSSOです。</span></li>
+						</ul>
+						<div class="concept__row-top-image-wrap">
+							<div class="concept__row-top-image img-bg">
+								<img src="/images/concept/concept_1.jpg" alt="concept-image">
+							</div>
+						</div>
+					</div>
+					<h2 class="section-title mr40">
+						コンセプト・理念
+					</h2>
+					<div class="concept__row">
+						<div class="concept__row-image-wrap">
+							<div class="concept__row-image img-bg">
+								<img src="/images/concept/concept_2.jpg" alt="concept-image">
+							</div>
+						</div>
+						<div class="concept__row-inner">
+							<ul class="concept__row-list">
+								<li class="concept__row-list-item mr30 text"><span>『PIU
+										MOSSO』とは楽譜などに用いられる音楽用語で『今までより速く』という意味を持つイタリア語です。美しくありたい女性たちの忙しい朝、ヘアセットにかける時間が少しでも短くなるように…お一人お一人の髪の毛のお悩みに合わせたスタイルを作ることでより手早くスタイリングできるように…そんな願いを込めた店名となっています。
+									</span></li>
+								<li class="concept__row-list-item mr30 text">
+									<span>当店オーナーは某大手サロンでの店長経験、<br
+											class="mb">カットコンクールにて受賞歴があり、丁寧なカウンセリングで髪質やくせを見極めるカットを得意としております。また、自身も小さな子どものパパでもある為、子どもを抱えたご家庭の朝が慌ただしく忙しいことをふまえ、そんな中でもササッと<br
+											class="pc-min">決まる可愛い髪型で過ごしたいという願いに寄り添い、お手入れの簡単なスタイル作りをご提案いたします。
+									</span></li>
+								<li class="concept__row-list-item text mr30"><span>
+										ヘアケアの資格取得をするなど、常に美しい髪のためにアンテナを張り、変わり続けるトレンドのお色やスタイルを常に勉強し続けております。</span></li>
+								<li class="concept__row-list-item text mr30"><span>
+										トレンドのスタイルはもちろんのこと、気になり始めた白髪や、ハリコシがなくなってきたように感じるなど、髪のエイジングによるお悩みに寄り添い、大人女性の皆様にヘアスタイルで魅せる−5歳をご提案いたします。
+									</span></li>
+								<li class="inner-title mr30">
+									<span>人生を彩るヘアスタイルで貴方の毎日をもっと笑顔に！！</span>
+								</li>
+								<li class="text"><span>そんな願いを込めてOPENした、久喜で初めての美髪特化型サロンPIU MOSSO（ピウモッソ）です。</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="concept__row-bot">
+						<h3 class="block-title mr40">こんな悩みありませんか？</h3>
+						<ul class="concept__row-bot-list">
+							<li class="concept__row-bot-list-item text"><span>くせ毛で髪がパサつく</span></li>
+							<li class="concept__row-bot-list-item text"><span>ハリコシ、ボリュームがなくなってきた・・</span></li>
+							<li class="concept__row-bot-list-item text"><span>髪に艶がなくなってきた・・</span></li>
+							<li class="concept__row-bot-list-item text"><span>カラーの繰り返しでダメージが気になる</span></li>
+						</ul>
+						<div class="concept__row-bot-rectangle">
+							<h3 class="block-title">一つでも当てはまれば是非<br class="mb">当サロンへお越しください！</h3>
+						</div>
+					</div>
+				</div>
+				<div class="concept__square-left">
+					<img src="/images/concept/square_left.png" alt="square">
+				</div>
+				<div class="concept__square-right">
+					<img src="/images/concept/square_right.png" alt="square">
+				</div>
+			</section>
+			<section class="reason sc-pd">
+				<div class="container">
+					<h2 class="section-title">
+						当サロンが選ばれる5つの理由
+					</h2>
+					<ul class="reason__list">
+						<li class="reason__item mr40">
+							<div class="reason__item-inner">
+								<div class="reason__item-ico-wrap">
+									<span>1</span>
+									<div class="reason__item-ico">
+										<svg width="120" height="120" viewBox="0 0 120 120" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M60 1.06733L1.06733 60L60 118.933L118.933 60L60 1.06733ZM0 60L60 120L120 60L60 1.04219e-06L0 60Z"
+												fill="#C06B1B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M84.8522 3.8724L8.66384 37.6579L42.4493 113.846L118.638 80.0607L84.8522 3.8724ZM7.66797 37.2739L42.0654 114.842L119.634 80.4447L85.2361 2.87653L7.66797 37.2739Z"
+												fill="#C06B1B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M49.4274 1.04594L3.44039 70.5536L72.9481 116.541L118.935 47.0329L49.4274 1.04594ZM2.39453 70.7666L73.1611 117.586L119.981 46.8199L49.2144 7.88877e-05L2.39453 70.7666Z"
+												fill="#C06B1B" />
+										</svg>
+									</div>
+								</div>
+								<div class="reason__item-text">
+									<h3 class="block-title">ダメージケアと栄養補給</h3>
+									<p class="text">
+										まとまりのある艶髪になるように、<br class="mb">ダメージをケアし、<br class="mb">不足した栄養を補給します。<br class="pc">
+										悩みの原因を取除くので、<br class="mb">ご自宅では乾かすだで美し<br class="pc-min">く。<br class="pc">
+										簡単なお手入れで美容室の仕上がりが再現できます。
+									</p>
+								</div>
+								<div class="reason__item-img-wrap">
+									<div class="reason__item-img">
+										<img src="/images/reason/reason-img_1.jpg" alt="reason-imgage">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="reason__item mr40">
+							<div class="reason__item-inner">
+								<div class="reason__item-ico-wrap">
+									<span>2</span>
+									<div class="reason__item-ico">
+										<svg width="120" height="120" viewBox="0 0 120 120" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M60 1.06733L1.06733 60L60 118.933L118.933 60L60 1.06733ZM0 60L60 120L120 60L60 1.04219e-06L0 60Z"
+												fill="#C06B1B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M84.8522 3.8724L8.66384 37.6579L42.4493 113.846L118.638 80.0607L84.8522 3.8724ZM7.66797 37.2739L42.0654 114.842L119.634 80.4447L85.2361 2.87653L7.66797 37.2739Z"
+												fill="#C06B1B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M49.4274 1.04594L3.44039 70.5536L72.9481 116.541L118.935 47.0329L49.4274 1.04594ZM2.39453 70.7666L73.1611 117.586L119.981 46.8199L49.2144 7.88877e-05L2.39453 70.7666Z"
+												fill="#C06B1B" />
+										</svg>
+									</div>
+								</div>
+								<div class="reason__item-text">
+									<h3 class="block-title">ダメージケアと栄養補給</h3>
+									<p class="text">
+										まとまりのある艶髪になるように、<br class="mb">ダメージをケアし、<br class="mb">不足した栄養を補給します。<br class="pc">
+										悩みの原因を取除くので、<br class="mb">ご自宅では乾かすだで美し<br class="pc-min">く。<br class="pc">
+										簡単なお手入れで美容室の仕上がりが再現できます。
+									</p>
+								</div>
+								<div class="reason__item-img-wrap">
+									<div class="reason__item-img">
+										<img src="/images/reason/reason-img_2.jpg" alt="reason-imgage">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="reason__item mr40 reason__item-min">
+							<div class="reason__item-inner">
+								<div class="reason__item-ico-wrap">
+									<span>3</span>
+									<div class="reason__item-ico">
+										<svg width="120" height="120" viewBox="0 0 120 120" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M60 1.06733L1.06733 60L60 118.933L118.933 60L60 1.06733ZM0 60L60 120L120 60L60 1.04219e-06L0 60Z"
+												fill="#C06B1B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M84.8522 3.8724L8.66384 37.6579L42.4493 113.846L118.638 80.0607L84.8522 3.8724ZM7.66797 37.2739L42.0654 114.842L119.634 80.4447L85.2361 2.87653L7.66797 37.2739Z"
+												fill="#C06B1B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M49.4274 1.04594L3.44039 70.5536L72.9481 116.541L118.935 47.0329L49.4274 1.04594ZM2.39453 70.7666L73.1611 117.586L119.981 46.8199L49.2144 7.88877e-05L2.39453 70.7666Z"
+												fill="#C06B1B" />
+										</svg>
+									</div>
+								</div>
+								<div class="reason__item-text">
+									<h3 class="block-title">ダメージケアと栄養補給</h3>
+									<p class="text">
+										まとまりのある艶髪になるように、<br class="mb">ダメージをケアし、<br class="mb">不足した栄養を補給します。<br class="pc">
+										悩みの原因を取除くので、<br class="mb">ご自宅では乾かすだで美しく。<br class="pc pc-2">
+										簡単なお手入れで美容室<br class="pc-min">の仕上がりが<br class="pc-3">再現できます。
+									</p>
+								</div>
+								<div class="reason__item-img-wrap">
+									<div class="reason__item-img">
+										<img src="/images/reason/reason-img_3.jpg" alt="reason-imgage">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="reason__item mr40 reason__item-min">
+							<div class="reason__item-inner">
+								<div class="reason__item-ico-wrap">
+									<span>4</span>
+									<div class="reason__item-ico">
+										<svg width="120" height="120" viewBox="0 0 120 120" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M60 1.06733L1.06733 60L60 118.933L118.933 60L60 1.06733ZM0 60L60 120L120 60L60 1.04219e-06L0 60Z"
+												fill="#C06B1B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M84.8522 3.8724L8.66384 37.6579L42.4493 113.846L118.638 80.0607L84.8522 3.8724ZM7.66797 37.2739L42.0654 114.842L119.634 80.4447L85.2361 2.87653L7.66797 37.2739Z"
+												fill="#C06B1B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M49.4274 1.04594L3.44039 70.5536L72.9481 116.541L118.935 47.0329L49.4274 1.04594ZM2.39453 70.7666L73.1611 117.586L119.981 46.8199L49.2144 7.88877e-05L2.39453 70.7666Z"
+												fill="#C06B1B" />
+										</svg>
+									</div>
+								</div>
+								<div class="reason__item-text">
+									<h3 class="block-title">ダメージケアと栄養補給</h3>
+									<p class="text">
+										まとまりのある艶髪になるように、<br class="mb">ダメージをケアし、<br class="mb">不足した栄養を補給します。<br class="pc">
+										悩みの原因を取除くので、<br class="mb">ご自宅では乾かすだで美しく。<br class="pc pc-2">
+										簡単なお手入れで美容室<br class="pc-min">の仕上がりが<br class="pc-3">再現できます。
+									</p>
+								</div>
+								<div class="reason__item-img-wrap">
+									<div class="reason__item-img">
+										<img src="/images/reason/reason-img_4.jpg" alt="reason-imgage">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="reason__item reason__item-min">
+							<div class="reason__item-inner">
+								<div class="reason__item-ico-wrap">
+									<span>55</span>
+									<div class="reason__item-ico">
+										<svg width="120" height="120" viewBox="0 0 120 120" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M60 1.06733L1.06733 60L60 118.933L118.933 60L60 1.06733ZM0 60L60 120L120 60L60 1.04219e-06L0 60Z"
+												fill="#C06B1B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M84.8522 3.8724L8.66384 37.6579L42.4493 113.846L118.638 80.0607L84.8522 3.8724ZM7.66797 37.2739L42.0654 114.842L119.634 80.4447L85.2361 2.87653L7.66797 37.2739Z"
+												fill="#C06B1B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M49.4274 1.04594L3.44039 70.5536L72.9481 116.541L118.935 47.0329L49.4274 1.04594ZM2.39453 70.7666L73.1611 117.586L119.981 46.8199L49.2144 7.88877e-05L2.39453 70.7666Z"
+												fill="#C06B1B" />
+										</svg>
+									</div>
+								</div>
+								<div class="reason__item-text">
+									<h3 class="block-title">ダメージケアと栄養補給</h3>
+									<p class="text">
+										まとまりのある艶髪になるように、<br class="mb">ダメージをケアし、<br class="mb">不足した栄養を補給します。<br class="pc">
+										悩みの原因を取除くので、<br class="mb">ご自宅では乾かすだで美しく。<br class="pc pc-2">
+										簡単なお手入れで美容室<br class="pc-min">の仕上がりが<br class="pc-3">再現できます。
+									</p>
+								</div>
+								<div class="reason__item-img-wrap">
+									<div class="reason__item-img">
+										<img src="/images/reason/reason-img_5.jpg" alt="reason-imgage">
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="voice sc-pd">
+				<div class="container">
+					<h2 class="section-title">
+						Voice
+					</h2>
+					<ul class="voice__list">
+						<li class="voice__item">
+							<div class="voice__image">
+								<img src="/images/voice/voice-image_1.jpg" alt="voice-image">
+							</div>
+							<h3 class="block-title">
+								髪の毛がツヤツヤだと気分が上が<br class="mb">りますね！
+							</h3>
+							<div class="voice__item-content">
+								<h4 class="inner-title">
+									<span class="txt-vsbl">
+										Ｑ． お店の好きなところ
+									</span>
+									<span class="txt-hide">
+										Ｑ．ご来店のきっかけ
+									</span>
+								</h4>
+								<p class="text">
+									<span class="txt-vsbl">
+										毎日忙しくバタバタしてる私にとって、<br class="pc">
+										美容室はそれだけでも非日常な場所です！<br class="pc">
+										更に特に内装など、非日常の空間をより作ってくれてて気にいってます
+									</span>
+									<span class="txt-hide">
+										近所に住んでいて、お店のチラシを見て興味を持ちました。
+									</span>
+								</p>
+							</div>
+							<div class="voice__item-content">
+								<h4 class="inner-title txt-vsbl">
+									Ｑ．ご来店・施術後の感想をお聞かせください
+								</h4>
+								<h4 class="inner-title txt-hide">
+									Ｑ．お店の好きなところ
+								</h4>
+								<p class="text txt-vsbl">
+									カラーリングとトリートメント、ブローして頂いただけなのに<br class="pc">
+									ストレートパーマかけた？と即聞かれるほどサラサラツヤツヤに！<br class="pc">
+									髪の毛サラサラツヤツヤだと気分上がりますね
+								</p>
+								<p class="text txt-hide">
+									音楽や雰囲気がガヤガヤしていなくて、落ち着けるところが好きです。
+								</p>
+							</div>
+						</li>
+						<li class="voice__item">
+							<div class="voice__image">
+								<img src="/images/voice/voice-image_1.jpg" alt="voice-image">
+							</div>
+							<h3 class="block-title">
+								髪の毛がツヤツヤだと気分が上が<br class="mb">りますね！
+							</h3>
+							<div class="voice__item-content">
+								<h4 class="inner-title">
+									<span class="txt-vsbl">
+										Ｑ． お店の好きなところ
+									</span>
+									<span class="txt-hide">
+										Ｑ．お店の好きなところ
+									</span>
+								</h4>
+								<p class="text">
+									<span class="txt-vsbl">
+										毎日忙しくバタバタしてる私にとって、<br class="pc">
+										美容室はそれだけでも非日常な場所です！<br class="pc">
+										更に特に内装など、非日常の空間をより作ってくれてて気にいってます
+									</span>
+									<span class="txt-hide">
+										近所に住んでいて、お店のチラシを見て興味を持ちました。
+									</span>
+								</p>
+							</div>
+							<div class="voice__item-content">
+								<h4 class="inner-title">
+									<span class="txt-vsbl">Ｑ．ご来店・施術後の感想をお聞かせください</span>
+									<span class="txt-hide">Ｑ．お店の好きなところ</span>
+								</h4>
+								<p class="text">
+									<span class="txt-vsbl">
+										カラーリングとトリートメント、ブローして頂いただけなのに<br class="pc">
+										ストレートパーマかけた？と即聞かれるほどサラサラツヤツヤに！<br class="pc">
+										髪の毛サラサラツヤツヤだと気分上がりますね
+									</span>
+									<span class="txt-hide">
+										音楽や雰囲気がガヤガヤしていなくて、落ち着けるところが好きです。
+									</span>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="menu sc-pd">
+				<div class="container">
+					<h2 class="section-title">
+						おすすめメニュー
+					</h2>
+					<ul class="menu__top-list">
+						<li class="menu__top-item">
+							<div class="menu__top-image-wrap">
+								<div class="menu__top-image img-bg">
+									<img src="/images/menu/menu-image_1.jpg" alt="menu-image">
+								</div>
+								<div class="menu__top-image-name">
+									<span class="text">
+										Dr.ドクターハリDr.ドクターハリコシカラー＆ボ<br class="pc-min">リュームUPパーマコシカラー＆ボリュームUPパーマ
+									</span>
+								</div>
+								<div class="menu__top-image-price">
+									<p class="inner-title">
+										<s>19,224円</s>→<span class="sp-pr">14,000</span><span class="sp-txt">円（税抜）</span>
+									</p>
+									<p class="text">
+										（鎖骨以上の場合は＋1000円）
+									</p>
+								</div>
+							</div>
+							<div class="menu__top-image-overlay">
+								<div class="menu__top-overlay-text">
+									<p class="text ovrl-txt-1">
+										カラーをしながらトップをふんわりさせたい方はこちら！髪修復ハリコシカラーと同時に根元のボ<br
+											class="tb">リュームアップを叶えます。ハリコシ・艶・ボリュームで若見え効果抜群！時間も従来の約半分なので、忙しい方にもピッタリです。
+									</p>
+									<p class="text ovrl-txt-2">
+										<span>【所要時間】</span>2 .5時間
+									</p>
+									<ul class="text ovrl-txt-3">
+										<li>・ドクターカラー</li>
+										<li>・ふんわりポイントパーマ</li>
+										<li>・ハリコシトリートメント</li>
+										<li>・カット</li>
+										<li>・シャンプー</li>
+										<li>・ブロー</li>
+										<li>・スタイリング込</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="menu__top-item menu__top-item--right">
+							<div class="menu__top-image-wrap">
+								<div class="menu__top-image img-bg">
+									<img src="/images/menu/menu-image_2.jpg" alt="menu-image">
+								</div>
+								<div class="menu__top-image-name">
+									<span class="text">
+										Dr.ドクターハリコシカラー＆ボリュームUPパーマ
+									</span>
+								</div>
+								<div class="menu__top-image-price">
+									<p class="inner-title">
+										<s>19,224円</s>→<span class="sp-pr">14,000</span><span class="sp-txt">円（税抜）</span>
+									</p>
+									<p class="text">
+										（鎖骨以上の場合は＋1000円）
+									</p>
+								</div>
+							</div>
+							<div class="menu__top-image-overlay">
+								<div class="menu__top-overlay-text">
+									<p class="text ovrl-txt-1">
+										カラーをしながらトップをふんわりさせたい方はこちら！髪修復ハリコシカラーと同時に根元のボ<br
+											class="tb">リュームアップを叶えます。ハリコシ・艶・ボリュームで若見え効果抜群！時間も従来の約半分なので、忙しい方にもピッタリです。
+									</p>
+									<p class="text ovrl-txt-2">
+										<span>【所要時間】</span>2 .5時間
+									</p>
+									<ul class="text ovrl-txt-3">
+										<li>・ドクターカラー</li>
+										<li>・ふんわりポイントパーマ</li>
+										<li>・ハリコシトリートメント</li>
+										<li>・カット</li>
+										<li>・シャンプー</li>
+										<li>・ブロー</li>
+										<li>・スタイリング込</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="menu__bot-list">
+						<li class="menu__bot-item">
+							<div class="menu__bot-inner">
+								<div class="menu__bot-image-wrap mr30">
+									<div class="menu__bot-image">
+										<img src="/images/menu/menu-bot-image_1.jpg" alt="menu-bot-image">
+									</div>
+								</div>
+								<div class="menu__bot-content">
+									<h3 class="inner-title mr30">
+										Dr.ドクターハリコシカラー＆ボ<br class="pc-min">リュームUPパーマ
+									</h3>
+									<p class="text mr20">
+										カラーをしながらトップをふんわりさせたい方はこちら！髪修復ハリコシカラーと同時に根元のボリュームアップを叶えます。ハリコシ・艶・ボ<br
+											class="mb">リュームで若見え効果抜群！時間も従来の約半分なので、忙しい方にもピッタリです。
+									</p>
+									<p class="text mr-cust">
+										【施術内容】
+									</p>
+									<ul class="menu__bot-content-list text mr20">
+										<li class="menu__bot-content-item">
+											・ドクターカラー
+										</li>
+										<li class="menu__bot-content-item">
+											・ふんわりポイントパーマ
+										</li>
+										<li class="menu__bot-content-item">
+											・ハリコシトリートメント
+										</li>
+										<li class="menu__bot-content-item">
+											・カット
+										</li>
+										<li class="menu__bot-content-item">
+											・シャンプー
+										</li>
+										<li class="menu__bot-content-item">
+											・ブロー
+										</li>
+										<li class="menu__bot-content-item">
+											・スタイリング込
+										</li>
+									</ul>
+									<p class="text">
+										<span class="pd-cust">【所要時間】</span> 2 .5時間
+									</p>
+								</div>
+								<div class="menu__bot-price">
+									<p class="text">
+										<s>19,224円</s>→<span class="mn-prce">14,000</span><span class="b">円（税抜）</span>
+									</p>
+									<p class="text mn-prce-bt">
+										（鎖骨以上の場合は＋1000円）
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="menu__bot-item">
+							<div class="menu__bot-inner">
+								<div class="menu__bot-image-wrap mr30">
+									<div class="menu__bot-image">
+										<img src="/images/menu/menu-bot-image_2.jpg" alt="menu-bot-image">
+									</div>
+								</div>
+								<div class="menu__bot-content">
+									<h3 class="inner-title mr30">
+										Dr.ドクターハリコシカラー＆ボ<br class="pc-min">リュームUPパーマ
+									</h3>
+									<p class="text mr20">
+										カラーをしながらトップをふんわりさせたい方はこちら！髪修復ハリコシカラーと同時に根元のボリュームアップを叶えます。ハリコシ・艶・ボ<br
+											class="mb">リュームで若見え効果抜群！時間も従来の約半分なので、忙しい方にもピッタリです。
+									</p>
+									<p class="text mr-cust">
+										【施術内容】
+									</p>
+									<ul class="menu__bot-content-list text mr20">
+										<li class="menu__bot-content-item">
+											・ドクターカラー
+										</li>
+										<li class="menu__bot-content-item">
+											・ふんわりポイントパーマ
+										</li>
+										<li class="menu__bot-content-item">
+											・ハリコシトリートメント
+										</li>
+										<li class="menu__bot-content-item">
+											・カット
+										</li>
+										<li class="menu__bot-content-item">
+											・シャンプー
+										</li>
+										<li class="menu__bot-content-item">
+											・ブロー
+										</li>
+										<li class="menu__bot-content-item">
+											・スタイリング込
+										</li>
+									</ul>
+									<p class="text">
+										<span class="pd-cust">【所要時間】</span> 2 .5時間
+									</p>
+								</div>
+								<div class="menu__bot-price">
+									<p class="text">
+										<s>19,224円</s>→<span class="mn-prce">14,000</span><span class="b">円（税抜）</span>
+									</p>
+									<p class="text mn-prce-bt">
+										（鎖骨以上の場合は＋1000円）
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="menu__bot-item">
+							<div class="menu__bot-inner">
+								<div class="menu__bot-image-wrap mr30">
+									<div class="menu__bot-image">
+										<img src="/images/menu/menu-bot-image_3.jpg" alt="menu-bot-image">
+									</div>
+								</div>
+								<div class="menu__bot-content">
+									<h3 class="inner-title mr30">
+										Dr.ドクターハリコシカラー＆ボ<br class="pc-min">リュームUPパーマ
+									</h3>
+									<p class="text mr20">
+										カラーをしながらトップをふんわりさせたい方はこちら！髪修復ハリコシカラーと同時に根元のボリュームアップを叶えます。ハリコシ・艶・ボ<br
+											class="mb">リュームで若見え効果抜群！時間も従来の約半分なので、忙しい方にもピッタリです。
+									</p>
+									<p class="text mr-cust">
+										【施術内容】
+									</p>
+									<ul class="menu__bot-content-list text mr20">
+										<li class="menu__bot-content-item">
+											・ドクターカラー
+										</li>
+										<li class="menu__bot-content-item">
+											・ふんわりポイントパーマ
+										</li>
+										<li class="menu__bot-content-item">
+											・ハリコシトリートメント
+										</li>
+										<li class="menu__bot-content-item">
+											・カット
+										</li>
+										<li class="menu__bot-content-item">
+											・シャンプー
+										</li>
+										<li class="menu__bot-content-item">
+											・ブロー
+										</li>
+										<li class="menu__bot-content-item">
+											・スタイリング込
+										</li>
+									</ul>
+									<p class="text">
+										<span class="pd-cust">【所要時間】</span> 2 .5時間
+									</p>
+								</div>
+								<div class="menu__bot-price">
+									<p class="text">
+										<s>19,224円</s>→<span class="mn-prce">14,000</span><span class="b">円（税抜）</span>
+									</p>
+									<p class="text mn-prce-bt">
+										（鎖骨以上の場合は＋1000円）
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<a href="#" class="btn">
+						<span>その他のメニューはこちら</span>
+						<span class="menu__btn-ico">
+							<svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M23.4683 0L32 9H0V7.98346H29.6735L22.7869 0.718803L23.4683 0Z" fill="#C06B1B" />
+							</svg>
+						</span>
+					</a>
+				</div>
+			</section>
+			<section class="warranty sc-pd">
+				<div class="container">
+					<div class="warranty__block">
+						<div class="warranty__wrap">
+							<h2 class="block-title">保証</h2>
+							<p class="text sub">万一ヘアスタイルにご満足い<br class="mb">ただけなかった場合は<br class="mb">施<br
+									class="pc">術から10日以内でしたら<br class="mb">無料でお直しいたします。</p>
+							<p class="text">
+								お気軽にご相談ください。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="salon sc-pd">
+				<div class="container">
+					<div class="salon__content">
+						<div class="salon__title-wrap">
+							<h2 class="block-title">
+								当サロンに来れば…
+							</h2>
+						</div>
+						<ul class="salon__list text">
+							<li>
+								朝のスタイリングが楽になる！
+							</li>
+							<li>
+								サラサラでずっと触っていたくなる髪に！
+							</li>
+							<li>
+								周りから素敵なスタイルね♪って褒められる！
+							</li>
+							<li>
+								オシャレして出かけたくなる！
+							</li>
+						</ul>
+						<div class="salon__text-wrap">
+							<span class="text">
+								今までのお悩みヘアにさよなら!
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="salon__square-left">
+					<img src="/images/salon/square-left.png" alt="square-left">
+				</div>
+				<div class="salon__square-right">
+					<img src="/images/salon/square-right.png" alt="square-right">
+				</div>
+			</section>
+			<div class="contacts sc-pd">
+				<div class="container">
+					<div class="contacts__row">
+						<div class="contacts__btn-wrap">
+							<a href="mailto:test@gmail.com" class="btn btn-big">
+								<span class="contacts__btn-ico" style="width: 32px; height: 22px;">
+									<svg width="32" height="22" viewBox="0 0 32 22" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M31.9857 3.18171C31.9857 3.15452 31.9857 3.11372 31.9857 3.07293C31.9857 2.97775 31.9715 2.88257 31.9429 2.80099C31.6573 1.21013 30.2008 0 28.4445 0H3.55554C1.79918 0 0.35697 1.21013 0.0571035 2.80099C0.0285448 2.88257 0.0142584 2.97775 0.0142584 3.07293C0.0142584 3.11372 0.0142724 3.14092 0.0285517 3.18171C0.0285517 3.2497 0 3.31768 0 3.38567V18.6144C0 20.4771 1.59927 22 3.55554 22H28.4445C30.4007 22 32 20.4771 32 18.6144V3.38567C32 3.31768 31.9857 3.2497 31.9857 3.18171ZM3.55554 1.69963H28.4445C29.1584 1.69963 29.7724 2.09394 30.0437 2.67861L15.9929 10.5649L1.94197 2.6922C2.24184 2.09393 2.85586 1.69963 3.55554 1.69963ZM28.4445 20.314H3.55554C2.57027 20.314 1.78492 19.5525 1.78492 18.6279V4.55501L15.5502 12.2645C15.5502 12.2645 15.5502 12.2645 15.5645 12.2645C15.6644 12.3189 15.7787 12.3461 15.8929 12.3597C15.7358 12.3325 15.7644 12.3461 15.7787 12.3461C15.8358 12.3597 15.8929 12.3597 15.9643 12.3597C15.95 12.3597 15.9786 12.3733 16.0071 12.3733C16.0357 12.3733 16.0643 12.3597 16.0928 12.3597C16.1642 12.3597 16.2213 12.3461 16.2785 12.3325C16.2642 12.3325 16.2785 12.3189 16.307 12.3189C16.4212 12.2781 16.5212 12.2237 16.6069 12.1558C16.4498 12.2509 16.4641 12.2509 16.4641 12.2509L30.2294 4.54141V18.6144C30.2294 19.5525 29.4297 20.314 28.4445 20.314Z"
+											fill="#C06B1B" />
+									</svg>
+								</span>
+								<span>お問い合わせ</span>
+							</a>
+						</div>
+						<div class="contacts__btn-wrap">
+							<a href="tel:0000000000" class="btn btn-big ">
+								<span class="contacts__btn-ico" style="width: 27px; height: 27px;">
+									<svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M20.9819 12.6186C21.0502 13.0561 21.4187 13.3705 21.8555 13.3705C21.8965 13.3705 21.9511 13.3705 21.992 13.3568C22.4698 13.2885 22.7974 12.8374 22.7292 12.3589C21.5689 4.7581 14.7574 4.38901 14.6892 4.38901C14.2114 4.36167 13.8019 4.74443 13.7746 5.23657C13.7473 5.72871 14.1295 6.13883 14.6209 6.1525C14.6619 6.1525 20.0401 6.43957 20.9819 12.6186ZM22.9476 4.22495C16.9688 -1.76272 11.495 0.342541 11.2766 0.424564C10.8261 0.60228 10.6077 1.12176 10.7852 1.57289C10.9626 2.02401 11.4814 2.24274 11.9318 2.06502C11.9728 2.05135 16.5319 0.301533 21.7054 5.46898C26.4693 10.24 25.077 15.0793 25.0087 15.2844C24.8586 15.7492 25.118 16.2413 25.5821 16.3917C25.664 16.419 25.7595 16.4327 25.8414 16.4327C26.21 16.4327 26.5649 16.1866 26.6741 15.8175C26.7696 15.5578 28.4896 9.77517 22.9476 4.22495ZM20.8864 24.9631C20.8045 25.0451 20.5315 25.2502 19.7807 25.2502C17.3646 25.2502 12.7372 23.2133 8.27355 18.7567C2.41759 12.892 1.09352 7.10943 2.06269 6.12515C2.6906 5.49631 4.01467 4.17028 5.25684 4.17028C5.93936 4.17028 6.59456 4.56671 7.24978 5.38694C9.13351 7.73827 8.3145 8.53116 6.96312 9.87087L6.71742 10.1169C6.37617 10.4587 6.19871 10.8961 6.19871 11.402C6.19871 12.2085 6.59457 13.6713 9.96618 17.0479C13.3378 20.4245 14.812 20.8209 15.6174 20.8209C16.1224 20.8209 16.5729 20.6432 16.9005 20.3015L17.1462 20.0554C17.8833 19.3172 18.5112 18.661 19.3166 18.661C19.9445 18.661 20.7089 19.0301 21.6235 19.7683C22.4016 20.3972 22.7974 21.0123 22.8247 21.6685C22.9066 22.9535 21.5416 24.3069 20.8864 24.9631ZM22.7292 18.4013C21.487 17.3896 20.3677 16.9112 19.3166 16.9112C17.7741 16.9112 16.7777 17.9228 15.8904 18.825L15.6037 19.0711C15.3307 19.0711 14.2251 18.8387 11.1947 15.8175C7.67294 12.2905 7.94594 11.361 7.94594 11.361L8.19165 11.1149C9.58397 9.74783 11.4814 7.8613 8.6148 4.27964C7.61833 3.03562 6.48537 2.40679 5.25684 2.40679C3.29121 2.40679 1.68048 4.00623 0.820515 4.86747C-1.71843 7.41018 1.99444 14.9563 7.03138 19.987C11.8636 24.8264 16.9142 27 19.7807 27C20.8181 27 21.5962 26.7266 22.1285 26.2071C22.9612 25.3732 24.6948 23.6371 24.5856 21.5728C24.531 20.4108 23.9031 19.3445 22.7292 18.4013Z"
+											fill="#C06B1B" />
+									</svg>
+								</span>
+								<span>0000-000-000</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="gallery sc-pd">
+				<h2 class="section-title mr40">
+					photo gallery
+				</h2>
+				<div class="gallery__row">
+					<ul class="gallery__list">
+						<li class="gallery__item">
+							<div class="gallery__item-image-wrap">
+								<div class="gallery__item-image">
+									<img src="/images/gallery/gallery__img-1.jpg" alt="gallery-image">
+								</div>
+							</div>
+						</li>
+						<li class="gallery__item">
+							<div class="gallery__item-image-wrap">
+								<div class="gallery__item-image">
+									<img src="/images/gallery/gallery__img-2.jpg" alt="gallery-image">
+								</div>
+							</div>
+						</li>
+						<li class="gallery__item">
+							<div class="gallery__item-image-wrap">
+								<div class="gallery__item-image">
+									<img src="/images/gallery/gallery__img-3.jpg" alt="gallery-image">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<a href="#" class="btn btn-gallery">
+						<span class="gallery__btn-text-wrap">
+							<span class="gallery__btn-text">show all</span>
+							<span class="gallery__btn-ico">
+								<svg width="32" height="8" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M23.4683 0L32 9H0V7.98346H29.6735L22.7869 0.718803L23.4683 0Z" fill="#C06B1B" />
+								</svg>
+							</span>
+						</span>
+					</a>
+				</div>
+			</section>
+			<section class="map sc-pd">
+				<div class="container">
+					<div class="map__column">
+						<h2 class="section-title">
+							アクセス
+						</h2>
+						<ul class="map__tel-list">
+							<li class="map__tel-item">
+								<a class="text" href="tel:0000000000">TEL 0000-000-000</a>
+							</li>
+							<li class="map__tel-item">
+								<span class=" text">受付時間 10:00 - 19:00</span>
+							</li>
+						</ul>
+						<address class="map__adress">
+							<p class="text">
+								〒700-0977<br class="mb">
+								岡山市北区問屋町14番<br class="mb">102 坪田ビル 1F<br>
+								JR 北長瀬駅より徒歩15分
+							</p>
+						</address>
+						<ul class="map__map-list">
+							<li class="map__map-image-wrap">
+								<div class="map__map-image">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164158.0429219302!2d36.24908026303504!3d49.99318276594037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1603014539279!5m2!1sru!2sua"
+										width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+										aria-hidden="false" tabindex="0"></iframe>
+								</div>
+							</li>
+							<li class="map__map-image-wrap">
+								<div class="map__map-image">
+									<img src="/images/map/map-image.jpg" alt="map-image">
+								</div>
+							</li>
+						</ul>
+						<div class="map__instagram">
+							<h3 class="block-title">
+								Instagram
+							</h3>
+							<ul class="map__instagram-list">
+								<li class="map__instagram-item">
+									<div class="map__instagram-image-wrap">
+										<div class="map__instagram-image">
+											<img src="/images/map/inst-img.jpg" alt="instagram-image">
+										</div>
+									</div>
+								</li>
+								<li class="map__instagram-item">
+									<div class="map__instagram-image-wrap">
+										<div class="map__instagram-image">
+											<img src="/images/map/inst-img.jpg" alt="instagram-image">
+										</div>
+									</div>
+								</li>
+								<li class="map__instagram-item">
+									<div class="map__instagram-image-wrap">
+										<div class="map__instagram-image">
+											<img src="/images/map/inst-img.jpg" alt="instagram-image">
+										</div>
+									</div>
+								</li>
+								<li class="map__instagram-item">
+									<div class="map__instagram-image-wrap">
+										<div class="map__instagram-image">
+											<img src="/images/map/inst-img.jpg" alt="instagram-image">
+										</div>
+									</div>
+								</li>
+								<li class="map__instagram-item">
+									<div class="map__instagram-image-wrap">
+										<div class="map__instagram-image">
+											<img src="/images/map/inst-img.jpg" alt="instagram-image">
+										</div>
+									</div>
+								</li>
+								<li class="map__instagram-item">
+									<div class="map__instagram-image-wrap">
+										<div class="map__instagram-image">
+											<img src="/images/map/inst-img.jpg" alt="instagram-image">
+										</div>
+									</div>
+								</li>
+								<li class="map__instagram-item">
+									<div class="map__instagram-image-wrap">
+										<div class="map__instagram-image">
+											<img src="/images/map/inst-img.jpg" alt="instagram-image">
+										</div>
+									</div>
+								</li>
+								<li class="map__instagram-item">
+									<div class="map__instagram-image-wrap">
+										<div class="map__instagram-image">
+											<img src="/images/map/inst-img.jpg" alt="instagram-image">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<a data-anchor class="scroll-top">
+				<span class="scroll-bg">
+					<img src="/images/scroll-top/scroll-bg3.png" alt="">
+				</span>
+				<span class="scroll-arrow">
+					<svg width="16" height="35" viewBox="0 0 16 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 35V1H7V35H9Z"
+							fill="#C06B1B" />
+					</svg>
+				</span>
+			</a>
+		</div>
+		<%= _.template(require('./parts/footer.html'))() %>
+	</div>
+</body>
+
+</html>

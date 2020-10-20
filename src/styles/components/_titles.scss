@@ -1,0 +1,118 @@
+//titles
+
+.section-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 43px;
+	text-align: center;
+	color: $denim;
+	background-image: url('/images/icons_all/castle.png');
+	background-size: 52px 52px;
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 73px;
+
+	@include media ('<desktop_lg') {
+		font-size: 28px;
+		line-height: 40px;
+		background-size: 48px 48px;
+		padding-top: 58px;
+	}
+
+	@include media ('<dt-min') {
+		font-size: 26px;
+		line-height: 37px;
+		background-size: 48px 48px;
+		padding-top: 54px;
+	}
+
+	@include media ('<tb') {
+		font-size: 24px;
+		line-height: 34px;
+		background-size: 40px 40px;
+		padding-top: 45px;
+	}
+}
+
+.block-title {
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 37px;
+	text-align: center;
+	color: $maroon;
+
+	@include media ('<desktop_lg') {
+		font-size: 24px;
+		line-height: 34px;
+	}
+
+	@include media ('<dt-min') {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	@include media ('<tb') {
+		font-size: 20px;
+		line-height: 29px;
+	}
+}
+
+.inner-title {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 32px;
+	color: $denim;
+
+	@include media ('<desktop_lg') {
+		font-size: 20px;
+		line-height: 29px;
+	}
+
+	@include media ('<dt-min') {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	@include media ('<tb') {
+		font-size: 16px;
+		line-height: 23px;
+	}
+}
+
+//text
+
+.text {
+	font-size: 16px;
+	line-height: 23px;
+	color: $denim;
+}
+
+//margin
+
+.mr40 {
+	margin-bottom: 40px;
+
+	@include media ('<desktop_lg') {
+		margin-bottom: 30px;
+	}
+
+	@include media ('<tb') {
+		margin-bottom: 20px;
+	}
+}
+
+.mr30 {
+	margin-bottom: 30px;
+
+	@include media ('<desktop_lg') {
+		margin-bottom: 20px;
+	}
+}
+
+.mr20 {
+	margin-bottom: 20px;
+
+	@include media ('<tb') {
+		margin-bottom: 10px;
+	}
+}
