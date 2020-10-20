@@ -87,6 +87,12 @@ body {
 		display: none !important;
 	}
 }
+.dt-min {
+
+	@include media ('<dt-min') {
+		display: none;
+	}
+}
 
 /* default class */
 .wrapper {

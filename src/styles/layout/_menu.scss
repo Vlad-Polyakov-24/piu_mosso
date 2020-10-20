@@ -1,4 +1,8 @@
 .top-all {
+	background: url('/images/concept/concept-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
 
 	&__row {
 		display: flex;
@@ -119,8 +123,6 @@
 	}
 }
 
-
-
 .menu-price {
 	background: url('/images/concept/concept-bg.jpg');
 	background-size: cover;
@@ -177,9 +179,6 @@
 		}
 	}
 
-	&__column {
-	}
-
 	&__list {
 		max-width: 700px;
 		margin: 0 auto;
@@ -190,16 +189,9 @@
 		justify-content: space-between;
 	}
 
-	&__item-left {
-	}
-
 	&__item-left--min {
 		font-size: 16px;
 		line-height: 23px;
 		font-weight: 400;
 	}
-
-	&__item-right {
-	}
-
 }
