@@ -1,11 +1,6 @@
 /*top*/
 .top {
-	margin-bottom: 46px;
 	position: relative;
-
-	@include media ('<=dt-min') {
-		margin-bottom: 0px;
-	}
 
 	&__work {
 		background-color: #446379;
@@ -14,12 +9,14 @@
 	&__work-list {
 		display: flex;
 		justify-content: center;
-		margin-right: -18px;
-		margin-left: -18px;
+		width: 100%;
+		margin-left: 10px;
 
 		@include media ('<tb') {
 			display: block;
-			padding: 2px 15px;
+			padding: 5px 17px;
+			margin-left: 0px;
+			padding: 5px 0px;
 		}
 	}
 
@@ -27,14 +24,13 @@
 		color: $white;
 		font-size: 14px;
 		line-height: 20px;
-		padding: 6px 18px;
-		margin: 0 -15px;
+		padding: 6px 5px;
 
 		@include media ('<tb') {
 			font-size: 12px;
 			line-height: 17px;
-			padding: 0px 18px;
-			margin-bottom: 4.8px;
+			padding: 0;
+			margin-bottom: 2px;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -42,7 +38,7 @@
 		}
 
 		span {
-			padding: 0 15px;
+			padding: 0 13px;
 		}
 	}
 
@@ -84,14 +80,35 @@
 	&__welcome {
 		width: 260px;
 		height: 660px;
-		padding: 20px 15px;
 		background-color: #1A2E53;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding-left: 16px;
+
+		@include media ('<tb') {
+			justify-content: center;
+		}
 
 		span {
-			width: 100%;
-			height: 100%;
-			max-width: 55px;
+			width: 55px;
+			height: 620px;
 			display: block;
+
+			@include media ('<desktop_lg') {
+				width: 49px;
+				height: 560px;
+			}
+
+			@include media ('<dt-min') {
+				width: 46px;
+				height: 520px;
+			}
+
+			@include media ('<tb') {
+				width: 23px;
+				height: 260px;
+			}
 
 			svg,path {
 				display: block;
@@ -108,12 +125,13 @@
 		@include media ('<dt-min') {
 			width: 144px;
 			height: 560px;
-			padding: 20px 10px;
 		}
 
 		@include media ('<tb') {
 			width: 53px;
 			height: 320px;
+			padding-left: 0;
+			padding-bottom: 20px;
 		}
 	}
 
@@ -159,9 +177,10 @@
 		z-index: 2;
 
 		@include media ('<desktop_lg') {
-			width: 230px;
-			height: 230px;
-			bottom: -66px;
+			width: 255px;
+			height: 255px;
+			bottom: -90px;
+			left: 126px;
 		}
 
 		@include media ('<dt-min') {
@@ -221,21 +240,24 @@
 
 /*concept*/
 .concept {
-	padding: 33px 0 80px;
 	background-image: url('/images/concept/concept-bg.jpg');
 	position: relative;
 	overflow: hidden;
 
-	@include media ('<desktop_lg') {
-		padding: 60px 0 80px;
-	}
-
-	@include media ('<dt-min') {
-		padding: 50px 0 60px;
-	}
-
-	@include media ('<tb') {
-		padding: 30px 0 40px;
+	&.sc-pd {
+		@include media ('<desktop_lg') {
+			padding-bottom: 80px;
+		}
+	
+		@include media ('<dt-min') {
+			padding-bottom: 60px;
+			padding-top: 50px;
+		}
+	
+		@include media ('<tb') {
+			padding-top: 30px;
+			padding-bottom: 40px;
+		}
 	}
 
 	&__row-top {
@@ -264,9 +286,11 @@
 		flex-direction: column;
 		justify-content: center;
 		padding-top: 10px;
+		width: calc(100% - 586px);
 
 		@include media ('<dt-min') {
 			margin-bottom: 30px;
+			width: auto;
 		}
 
 		@include media ('<tb') {
@@ -418,26 +442,37 @@
 		}
 	}
 
-	&__row-inner {
+	&__row-desc {
+		margin-left: 40px;
+		width: calc(100% - 280px);
+
+		@include media ('<desktop_lg') {
+			margin-left: 30px;
+			width: calc(100% - 250px);
+		}
+
+		@include media ('<dt-min') {
+			margin-left: 0;
+			margin-bottom: 30px;
+			width: 100%;
+		}
+
+		@include media ('<tb') {
+			margin-bottom: 20px;
+		}
+
 		p.text {
 			font-weight: 700;
 		}
 	}
 
 	&__row-list {
-		margin-left: 40px;
+	
+		li:last-child {
 
-		@include media ('<desktop_lg') {
-			margin-left: 30px;
-		}
-
-		@include media ('<dt-min') {
-			margin-left: 0;
-			margin-bottom: 30px;
-		}
-
-		@include media ('<tb') {
-			margin-bottom: 20px;
+			&.text {
+				font-weight: 700;
+			}
 		}
 	}
 
@@ -598,7 +633,7 @@
 		position: absolute;
 		width: 330px;
 		height: 330px;
-		top: 416px;
+		top: 460px;
 		left: -80px;
 		z-index: 2;
 
@@ -628,7 +663,7 @@
 		position: absolute;
 		width: 500px;
 		height: 500px;
-		top: 694px;
+		top: 740px;
 		right: -120px;
 		z-index: 2;
 
@@ -732,6 +767,15 @@
 
 	&__item {
 		width: 100%;
+
+		&:last-child {
+			.reason__item-img {
+
+				img {
+					object-fit: contain;
+				}
+			}
+		}
 	}
 
 	&__item-inner {
@@ -947,6 +991,7 @@
 		position: relative;
 		height: 0;
 		padding-bottom: calc(260 / 460 * 100%);
+		background-color: $tan;
 
 		@include media ('<=ph') {
 			padding-bottom: calc(160 / 265 * 100%);
@@ -1201,10 +1246,10 @@
 
 	&.sc-pd {
 		padding-top: 84px;
-		padding-bottom: 77px;
 
 		@include media ('<desktop_lg') {
 			padding-top: 60px;
+			padding-bottom: 78px;
 		}
 
 		@include media ('<dt-min') {
@@ -1219,7 +1264,7 @@
 
 	&__top-list {
 		display: flex;
-		margin: 0 -32.5px 184px;
+		margin: 0 -32.5px 179px;
 
 		@include media ('<desktop_lg') {
 			margin: 0 -15.5px 155px;
@@ -1465,7 +1510,7 @@
 		opacity: 0;
 		transition: all 0.4s ease 0s;
 
-		@at-root :root.hover &:hover{
+		&:hover{
 			opacity: 1;
 		}
 
@@ -1480,11 +1525,7 @@
 			padding: 0;
 			opacity: 1;
 			margin-bottom: 48px;
-		}
-		
-		@include media ('<tb') {
-			
-		}
+		}	
 	}
 
 	&__top-overlay-text {
@@ -1558,6 +1599,13 @@
 		width: 33.333%;
 		padding: 0 13px 40px;
 
+		&:nth-child(2) {
+			
+			.menu__bot-image img {
+				object-fit: contain;
+			}
+		}
+
 		.mr30 {
 			@include media ('<desktop_lg') {
 				margin-bottom: 20px;
@@ -1620,6 +1668,7 @@
 		position: relative;
 		height: 0;
 		padding-bottom: calc(482/ 362 * 100%);
+		background-color: $tan;
 
 		img {
 			display: block;
@@ -1762,10 +1811,7 @@
 		}
 	}
 
-	&__btn-ico {
-		display: inline-block;
-		width: 32px;
-		height: 9px;
+	.btn-ico {
 		margin-left: 40px;
 
 		@include media ('<desktop_lg') {
@@ -1774,11 +1820,6 @@
 		
 		@include media ('<tb') {
 			margin-left: 20px;
-		}
-
-		svg,path {
-			display: block;
-			width: 100%;
 		}
 	}
 }
@@ -1794,10 +1835,10 @@
 
 	&.sc-pd {
 		padding-top: 88px;
-		padding-bottom: 85px;
+		padding-bottom: 84px;
 
 		@include media ('<desktop_lg') {
-			padding-bottom: 84px;
+			padding-bottom: 88px;
 		}
 
 		@include media ('<dt-min') {
@@ -1832,6 +1873,10 @@
 		border-radius: 20px;
 		padding: 17px 10px 18px;
 		text-align: center;
+
+		@include media ('<desktop_lg') {
+			padding: 17px 10px 14px;
+		}
 
 		@include media ('<dt-min') {
 			padding: 10.5px;
@@ -2275,18 +2320,11 @@
 		}
 	}
 
-	&__btn-ico {
-		display: inline-block;
+	.btn-ico {
 		margin-right: 30px;
-		flex-shrink: 0;
 
 		@include media ('<desktop_lg') {
 			margin-right: 20px;
-		}
-
-		svg,path {
-			display: block;
-			width: 100%;
 		}
 	}
 }
@@ -2365,7 +2403,6 @@
 	}
 
 	&__item-image-wrap {
-		max-width: 640px;
 		min-width: 610px;
 		width: 100%;
 		
@@ -2428,17 +2465,6 @@
 			margin-bottom: 20px;
 		}
 	}
-
-	&__btn-ico {
-		display: inline-block;
-		width: 32px;
-		height: 8px;
-
-		svg,path {
-			display: block;
-			width: 100%;
-		}
-	}
 }
 /*========*/
 
@@ -2478,6 +2504,10 @@
 
 		@include media ('<desktop_lg') {
 			padding-bottom: 59px;
+		}
+
+		@include media ('<dt-min') {
+			padding-bottom: 60px;
 		}
 
 		@include media ('<tb') {

@@ -35,7 +35,19 @@
 	<div class="wrapper" id="wrapper">
 		<%= _.template(require('./parts/header.html'))() %>
 		<div class="app" id="app">
-			<section class="top-all">
+			<div class="top-all">
+				<div class="top__work">
+					<div class="container">
+						<ul class="top__work-list">
+							<li class="top__work-item"><span class="top__spn-ico">営業時間</span><span class="top__spn-txt">9:00 ～
+									19:00</span></li>
+							<li class="top__work-item"><span class="top__spn-ico">最終受付</span><span class="top__spn-txt">カット
+									18:00 カラー・パーマ 17:00</span></li>
+							<li class="top__work-item"><span class="top__spn-ico">定休日</span><span
+									class="top__spn-txt">火曜日</span></li>
+						</ul>
+					</div>
+				</div>
 				<div class="top-all__row">
 					<div class="top-all__welcome">
 					</div>
@@ -100,7 +112,7 @@
 						</svg>
 					</strong>
 				</div>
-			</section>
+			</div>
 			<section class="menu menu-menu sc-pd">
 				<div class="container">
 					<h2 class="section-title">
@@ -119,14 +131,15 @@
 								</div>
 								<div class="menu__top-image-price">
 									<p class="inner-title">
-										<s>19,224円</s>→<span class="sp-pr">14,000</span><span class="sp-txt">円（税抜）</span>
+										<span class="strike">19,224円</span>→<span class="sp-pr">14,000</span><span
+											class="sp-txt">円（税抜）</span>
 									</p>
 									<p class="text">
 										（鎖骨以上の場合は＋1000円）
 									</p>
 								</div>
 							</div>
-							<div class="menu__top-image-overlay">
+							<div class="menu__top-image-overlay" data-simplebar>
 								<div class="menu__top-overlay-text">
 									<p class="text ovrl-txt-1">
 										カラーをしながらトップをふんわりさせたい方はこちら！髪修復ハリコシカラーと同時に根元のボ<br
@@ -159,14 +172,15 @@
 								</div>
 								<div class="menu__top-image-price">
 									<p class="inner-title">
-										<s>19,224円</s>→<span class="sp-pr">14,000</span><span class="sp-txt">円（税抜）</span>
+										<span class="strike">19,224円</span>→<span class="sp-pr">14,000</span><span
+											class="sp-txt">円（税抜）</span>
 									</p>
 									<p class="text">
 										（鎖骨以上の場合は＋1000円）
 									</p>
 								</div>
 							</div>
-							<div class="menu__top-image-overlay">
+							<div class="menu__top-image-overlay" data-simplebar>
 								<div class="menu__top-overlay-text">
 									<p class="text ovrl-txt-1">
 										カラーをしながらトップをふんわりさせたい方はこちら！髪修復ハリコシカラーと同時に根元のボ<br
@@ -236,7 +250,8 @@
 								</div>
 								<div class="menu__bot-price">
 									<p class="text">
-										<s>19,224円</s>→<span class="mn-prce">14,000</span><span class="b">円（税抜）</span>
+										<span class="strike">19,224円</span>→<span class="mn-prce">14,000</span><span
+											class="b">円（税抜）</span>
 									</p>
 									<p class="text mn-prce-bt">
 										（鎖骨以上の場合は＋1000円）
@@ -291,7 +306,8 @@
 								</div>
 								<div class="menu__bot-price">
 									<p class="text">
-										<s>19,224円</s>→<span class="mn-prce">14,000</span><span class="b">円（税抜）</span>
+										<span class="strike">19,224円</span>→<span class="mn-prce">14,000</span><span
+											class="b">円（税抜）</span>
 									</p>
 									<p class="text mn-prce-bt">
 										（鎖骨以上の場合は＋1000円）
@@ -346,7 +362,8 @@
 								</div>
 								<div class="menu__bot-price">
 									<p class="text">
-										<s>19,224円</s>→<span class="mn-prce">14,000</span><span class="b">円（税抜）</span>
+										<span class="strike">19,224円</span>→<span class="mn-prce">14,000</span><span
+											class="b">円（税抜）</span>
 									</p>
 									<p class="text mn-prce-bt">
 										（鎖骨以上の場合は＋1000円）
@@ -355,15 +372,6 @@
 							</div>
 						</li>
 					</ul>
-					<a href="#" class="btn">
-						<span>その他のメニューはこちら</span>
-						<span class="menu__btn-ico">
-							<svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M23.4683 0L32 9H0V7.98346H29.6735L22.7869 0.718803L23.4683 0Z" fill="#C06B1B" />
-							</svg>
-						</span>
-					</a>
 				</div>
 			</section>
 			<section class="menu-price sc-pd">
@@ -372,156 +380,96 @@
 						メインメニュー<br>（税込）
 					</h2>
 					<ul class="menu-price__list">
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								カット
-							</span>
-							<span class="menu-price__item-right">
-								¥5500
-							</span>
+						<li class="menu-price__item inner-title mr40">
+							<dl class="menu-price__item-row">
+								<dt class="menu-price__item-left">カット</dt>
+								<dd class="menu-price__item-right">¥5500</dd>
+							</dl>
 						</li>
-						<hr class="hr">
-						<li class="menu-price__item mr30">
-							<span class="block-title">
-								カット
-							</span>
+						<li class="menu-price__item inner-title mr40">
+							<h3 class="menu-price__item-row block-title mr30">カラー</h3>
+							<dl class="menu-price__item-row mr30">
+								<dt class="menu-price__item-left">
+									リタッチ
+									<span class="menu-price__item-left--min">
+										※2cm以内
+									</span>
+								</dt>
+								<dd class="menu-price__item-right">¥6600</dd>
+							</dl>
+							<dl class="menu-price__item-row">
+								<dt class="menu-price__item-left">フル</dt>
+								<dd class="menu-price__item-right">¥7700</dd>
+							</dl>
 						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								リタッチ
-								<span class="menu-price__item-left--min">
-									※2cm以内
-								</span>
-							</span>
-							<span class="menu-price__item-right">
-								¥6600
-							</span>
+						<li class="menu-price__item inner-title mr40">
+							<dl class="menu-price__item-row mr30">
+								<dt class="menu-price__item-left">パーマ</dt>
+								<dd class="menu-price__item-right">¥6600</dd>
+							</dl>
+							<dl class="menu-price__item-row mr30">
+								<dt class="menu-price__item-left">前髪パーマ</dt>
+								<dd class="menu-price__item-right">¥2200</dd>
+							</dl>
+							<dl class="menu-price__item-row">
+								<dt class="menu-price__item-left">パーマ+カット</dt>
+								<dd class="menu-price__item-right">¥11000</dd>
+							</dl>
 						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								フル
-							</span>
-							<span class="menu-price__item-right">
-								¥7700
-							</span>
+						<li class="menu-price__item inner-title mr40">
+							<dl class="menu-price__item-row mr30">
+								<dt class="menu-price__item-left">ストレート</dt>
+								<dd class="menu-price__item-right">¥13200</dd>
+							</dl>
+							<dl class="menu-price__item-row mr30">
+								<dt class="menu-price__item-left">カット込</dt>
+								<dd class="menu-price__item-right">¥16500</dd>
+							</dl>
+							<dl class="menu-price__item-row">
+								<dt class="menu-price__item-left">前髪ストレート</dt>
+								<dd class="menu-price__item-right">¥4400</dd>
+							</dl>
 						</li>
-						<hr class="hr">
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								パーマ
-							</span>
-							<span class="menu-price__item-right">
-								¥6600
-							</span>
+						<li class="menu-price__item inner-title mr40">
+							<h3 class="menu-price__item-row block-title mr30">スパ</h3>
+							<dl class="menu-price__item-row mr30">
+								<dt class="menu-price__item-left">プチスパ</dt>
+								<dd class="menu-price__item-right">¥550</dd>
+							</dl>
+							<dl class="menu-price__item-row mr30">
+								<dt class="menu-price__item-left">
+									アロマ
+									<span class="menu-price__item-left--min">
+										（10分）
+									</span>
+								</dt>
+								<dd class="menu-price__item-right">¥2200</dd>
+							</dl>
+							<dl class="menu-price__item-row">
+								<dt class="menu-price__item-left">
+									フル
+									<span class="menu-price__item-left--min">
+										（20分）
+									</span>
+								</dt>
+								<dd class="menu-price__item-right">¥3850</dd>
+							</dl>
 						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								前髪パーマ
-							</span>
-							<span class="menu-price__item-right">
-								¥2200
-							</span>
+						<li class="menu-price__item inner-title">
+							<h3 class="menu-price__item-row block-title mr30">トリートメント</h3>
+							<dl class="menu-price__item-row mr30">
+								<dt class="menu-price__item-left">スタンダード</dt>
+								<dd class="menu-price__item-right">¥2200</dd>
+							</dl>
+							<dl class="menu-price__item-row mr30">
+								<dt class="menu-price__item-left">ジュエル </dt>
+								<dd class="menu-price__item-right">¥4400</dd>
+							</dl>
+							<dl class="menu-price__item-row">
+								<dt class="menu-price__item-left">Dr.エステ</dt>
+								<dd class="menu-price__item-right">¥6600</dd>
+							</dl>
 						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								パーマ+カット
-							</span>
-							<span class="menu-price__item-right">
-								¥11000
-							</span>
-						</li>
-						<hr class="hr">
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								ストレート
-							</span>
-							<span class="menu-price__item-right">
-								¥13200
-							</span>
-						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								カット込
-							</span>
-							<span class="menu-price__item-right">
-								¥16500
-							</span>
-						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								前髪ストレート
-							</span>
-							<span class="menu-price__item-right">
-								¥4400
-							</span>
-						</li>
-						<hr class="hr">
-						<li class="menu-price__item mr30">
-							<span class="block-title">
-								スパ
-							</span>
-						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								プチスパ
-							</span>
-							<span class="menu-price__item-right">
-								¥550
-							</span>
-						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								アロマ
-								<span class="menu-price__item-left--min">
-									（10分）
-								</span>
-							</span>
-							<span class="menu-price__item-right">
-								¥2200
-							</span>
-						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								フル
-								<span class="menu-price__item-left--min">
-									（20分）
-								</span>
-							</span>
-							<span class="menu-price__item-right">
-								¥3850
-							</span>
-						</li>
-						<hr class="hr">
-						<li class="menu-price__item mr30">
-							<span class="block-title">
-								トリートメント
-							</span>
-						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								スタンダード
-							</span>
-							<span class="menu-price__item-right">
-								¥2200
-							</span>
-						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								ジュエル
-							</span>
-							<span class="menu-price__item-right">
-								¥4400
-							</span>
-						</li>
-						<li class="menu-price__item inner-title mr30">
-							<span class="menu-price__item-left">
-								Dr.エステ
-							</span>
-							<span class="menu-price__item-right">
-								¥6600
-							</span>
-						</li>
-						<hr class="hr">
 					</ul>
 				</div>
 			</section>
@@ -530,7 +478,7 @@
 					<div class="contacts__row">
 						<div class="contacts__btn-wrap">
 							<a href="mailto:test@gmail.com" class="btn btn-big">
-								<span class="contacts__btn-ico" style="width: 32px; height: 22px;">
+								<span class="btn-ico" style="width: 32px; height: 22px;">
 									<svg width="32" height="22" viewBox="0 0 32 22" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<path
@@ -543,7 +491,7 @@
 						</div>
 						<div class="contacts__btn-wrap">
 							<a href="tel:0000000000" class="btn btn-big ">
-								<span class="contacts__btn-ico" style="width: 27px; height: 27px;">
+								<span class="btn-ico" style="width: 27px; height: 27px;">
 									<svg width="27" height="27" viewBox="0 0 27 27" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<path

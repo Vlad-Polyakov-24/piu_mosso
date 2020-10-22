@@ -29,7 +29,7 @@
 
 		@include media ('<dt-min') {
 			width: 260px;
-			margin-bottom: 12px;
+			margin-bottom: 14px;
 		}
 
 		@include media ('<tb') {
@@ -42,6 +42,14 @@
 		display: flex;
 		margin: 0 -21px 25px;
 
+		@include media ('<desktop_lg') {
+			margin: 0 -21px 27px;
+		}
+
+		@include media ('<dt-min') {
+			margin: 0 -21px 31px;
+		}
+
 		@include media ('<tb') {
 			flex-direction: column;
 			margin: 0 -21px 18px;
@@ -52,14 +60,10 @@
 		display: flex;
 		margin: 0 -10px;
 		padding: 0 21px;
+		align-items: center;
 
 		li {
-			padding: 0 10px;
 			width: 100%;
-
-			@include media ('<tb') {
-				padding: 0 15px;
-			}
 		}
 
 		@include media ('<desktop_lg') {
@@ -68,13 +72,18 @@
 		}
 
 		@include media ('<tb') {
-			margin: 0 0px 11px;
+			margin: 0 0px 15px;
 			padding: 0;
 		}
 	}
 
 	&__social-link {
 		display: flex;
+		padding: 0 10px;
+
+		@include media ('<tb') {
+			padding: 0 15px;
+		}
 		
 		@at-root :root.hover &:hover {
 			
@@ -100,14 +109,6 @@
 		padding: 0 21px;
 		display: flex;
 
-		li {
-			padding: 0 10px;
-
-			@include media ('<tb') {
-				padding: 0 20px;
-			}
-		}
-
 		@include media ('<desktop_lg') {
 			margin: 0;
 			padding: 0px 19px;
@@ -126,9 +127,15 @@
 		font-weight: 500;
 		color: $white;
 		transition: .4s;
+		padding: 0 10px;
 
 		@at-root :root.hover &:hover{
 			color: #FFDC98;
+		}
+
+		@include media ('<tb') {
+			padding: 3px 20px;
+			display: block;
 		}
 	}
 
@@ -138,31 +145,22 @@
 		flex-wrap: wrap;
 
 		li {
-			padding: 0 30px;
-
-			@include media ('<desktop_lg') {
-				padding: 0 25px;
-			}
 
 			@include media ('<dt-min') {
-				padding: 10px 0;
+				flex: 25%;
+			}
+
+			@include media ('<tb') {
+				flex: 50%;
 			}
 		}
 
 		@include media ('<dt-min') {
-			margin: -10px 0 20px;
-
-			li {
-				flex: 25%;
-			}
+			margin: -10px 0 25px;
 		}
 
 		@include media ('<tb') {
 			margin: 0px 0 20px;
-
-			li {
-				flex: 50%;
-			}
 		}
 	}
 	
@@ -173,13 +171,21 @@
 		transition: .4s;
 		display: block;
 
+		padding: 0 30px;
+
 		@at-root :root.hover &:hover{
 			color: #FFDC98;
+		}
+
+		@include media ('<desktop_lg') {
+			padding: 0 25px;
 		}
 
 		@include media ('<dt-min') {
 			font-size: 14px;
 			line-height: 20px;
+			padding: 10px 0;
+			display: inline-block;
 		}
 	}
 
@@ -202,6 +208,10 @@
 
 	@include media ('<desktop_lg') {
 		padding-top: 27px;
+	}
+
+	@include media ('<dt-min') {
+		padding-top: 24px;
 	}
 
 	@include media ('<tb') {

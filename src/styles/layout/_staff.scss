@@ -4,27 +4,150 @@
 	background-repeat: no-repeat;
 	background-position: center;
 
+	.vsbl {
+		@include media ('<dt-min') {
+			display: none;
+		}
+	}
+
+	.hide {
+		display: none;
+		
+		@include media ('<dt-min') {
+			display: block;
+		}
+	}
+
+	.pos {
+		color: $aegean;
+		text-align: center;
+		margin-bottom: 20px;
+
+		@include media ('<tb') {
+			margin-bottom: 0;
+			order: 1;
+		}
+	}
+	
+	.cntr {
+		text-align: center;
+
+		@include media ('<tb') {
+			order: 4;
+		}
+	}
+
+	.mr20 {
+		@include media ('<dt-min') {
+			margin-bottom: 10px;
+		}
+	}
+
+	.name {
+		text-transform: uppercase;
+
+		@include media ('<tb') {
+			order: 2;
+		}
+	}
+
 	.inner-title {
 		text-align: center;
+	}
+
+	.btn-ico {
+		margin-left: 40px;
 	}
 
 	&__list {
 		display: flex;
 		margin: 0 -15px 80px;
+		flex-wrap: wrap;
+
+		@include media ('<desktop_lg') {
+			margin: 0 -15px 57px;
+		}
+
+		@include media ('<dt-min') {
+			margin: 0 -15px 0px;
+		}
 	}
 
 	&__item {
 		width: 25%;
 		padding: 0 15px;
+
+		@include media ('<dt-min') {
+			width: 50%;
+			margin-bottom: 30px;
+
+			&:nth-child(3) {
+				.staff__inner-image-wrap {
+					max-width: 100%;
+				}
+	
+				.staff__inner-image {
+					padding-bottom: calc(354/ 354 * 100%);
+				}
+			}
+	
+			&:nth-child(4) {
+				.staff__inner-image-wrap {
+					max-width: 100%;
+				}
+	
+				.staff__inner-image {
+					padding-bottom: calc(354/ 354 * 100%);
+				}
+			}
+		}
+
+		@include media ('<tb') {
+			width: 100%;
+
+			&:nth-child(3) {
+				.staff__inner-image-wrap {
+					max-width: 250px;
+				}
+	
+				.staff__inner-image {
+					padding-bottom: calc(354/ 264 * 100%);
+				}
+			}
+	
+			&:nth-child(4) {
+				.staff__inner-image-wrap {
+					max-width: 250px;
+				}
+	
+				.staff__inner-image {
+					padding-bottom: calc(354/ 264 * 100%);
+				}
+			}
+		}
 	}
 
 	&__inner {
+
+		@include media ('<dt-min') {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__inner-image-wrap {
 		max-width: 264px;
 		width: 100%;
 		margin-bottom: 20px;
+
+		@include media ('<dt-min') {
+			max-width: 250px;
+		}
+
+		@include media ('<tb') {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__inner-image {
@@ -55,29 +178,18 @@
 		height: 20px;
 		background-color: $oat;
 		transform: rotate(-45deg);
-		margin: 0 auto 20px;
+		margin: 0 auto 30px;
 
 		@include media ('<dt-min') {
 			margin: 0 auto 10px;
+			width: 16px;
+			height: 16px;
+		}
+
+		@include media ('<tb') {
+			width: 14px;
+			height: 14px;
+			order: 3;
 		}
 	}
-
-	&__btn-ico {
-		margin-left: 40px;
-
-		svg,path {
-			display: block;
-			width: 100%;
-		}
-	}
-}
-
-.sc-pd {
-}
-.section-title {
-}
-.mr40 {
-}
-
-.text {
 }

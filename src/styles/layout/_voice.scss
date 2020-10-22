@@ -1,0 +1,52 @@
+.voice-voice {
+	background: url('/images/concept/concept-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+
+	&.sc-pd {
+		padding-top: 40px;
+		padding-bottom: 100px;
+
+		@include media ('<desktop_lg') {
+			padding-bottom: 80px;
+		}
+
+		@include media ('<dt-min') {
+			padding-bottom: 60px;
+		}
+
+		@include media ('<tb') {
+			padding-bottom: 40px;
+		}
+	}
+}
+
+.voice-contacts {
+
+	&.sc-pd {
+		padding-top: 82px;
+		padding-bottom: 82px;
+	
+		@include media ('<desktop_lg') {
+			padding-top: 62px;
+			padding-bottom: 62px;
+		}
+	
+		@include media ('<tb') {
+			padding-top: 42px;
+			padding-bottom: 42px;
+		}
+	}
+}
+
+.top-voice {
+		.top-all__image img{
+			@include media ('<=dt-min') {
+				object-position: right;
+			}
+			@include media ('<tb') {
+				object-position: 90%;
+			}
+		}
+}

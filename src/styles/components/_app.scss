@@ -21,6 +21,10 @@
 
 body.lock {
 	overflow: hidden;
+
+	.header__hide {
+		display: none;
+	}
 }
 
 .img-bg {
@@ -82,6 +86,186 @@ body.lock {
 	padding: 0;
 	border: 0;
 	overflow: hidden;
+}
+
+.top-all {
+	background: url('/images/concept/concept-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+
+	@include media ('<tb') {
+		background-size: auto;
+	}
+
+	&__row {
+		display: flex;
+		position: relative;
+		align-items: flex-start;
+		overflow: hidden;
+	}
+
+	&__welcome {
+		width: 260px;
+		height: 440px;
+		background-color: #1A2E53;
+
+		@include media ('<desktop_lg') {
+			width: 184px;
+			height: 380px;
+		}
+
+		@include media ('<dt-min') {
+			width: 144px;
+			height: 320px;
+		}
+
+		@include media ('<tb') {
+			width: 53px;
+			height: 220px;
+		}
+	}
+
+	&__image-wrap {
+		width: calc(100% - 260px);
+		height: 500px;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.2);
+		}
+
+		@include media ('<desktop_lg') {
+			height: 440px;
+			width: calc(100% - 184px);
+		}
+	
+		@include media ('<dt-min') {
+			height: 380px;
+			width: calc(100% - 144px);
+		}
+	
+		@include media ('<tb') {
+			height: 260px;
+			width: calc(100% - 53px);
+		}
+	}
+
+	&__image {
+		position: relative;
+		height: 100%;
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			object-fit: cover;
+			object-position: center;
+			font-family: 'object-fit: cover; object-position: center;';
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		top: 144px;
+		left: 238px;
+		z-index: 2;
+		max-width: 380px;
+		width: 100%;
+
+		svg,path {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		@include media ('<=dt-min') {
+			max-width: 402px;
+			top: 112px;
+			left: 104px;
+		}
+
+		@include media ('<=tb') {
+			max-width: 299px;
+			left: 91px;
+		}
+
+		@include media ('<tb') {
+			max-width: 170px;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.red {
+	color: red;
+}
+
+.breadcrumb {
+
+	&__list {
+		background: url('/images/concept/concept-bg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top;
+		display: flex;
+		padding-top: 10px;
+		padding-left: calc(390 * 100% / 1920);
+
+		@include media ('<desktop_lg') {
+			display: none;
+		}
+	}
+
+	&__list-item {
+		position: relative;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0px;
+
+			&:after {
+				display: none;
+			}
+
+			.breadcrumb__list-link {
+				color: $royal;
+				border-bottom: 1px solid $royal;
+			}
+		}
+
+		&:after {
+			content: '/';
+			position: absolute;
+			right: -7px;
+			top: 50%;
+			color: $aegean;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__list-link {
+		font-size: 12px;
+		line-height: 17px;
+		color: $aegean;
+		transition: .4s;
+
+		@at-root :root.hover &:hover{
+			color: $royal;
+		}
+	}
+
 }
 
 .scroll-top {
@@ -147,6 +331,30 @@ body.lock {
 	}
 }
 
+.strike {
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		border: 1px solid $cream;
+	}
+
+	@include media ('<tb') {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.simplebar-scrollbar::before {
+	background-color: #FFDC98;
+}
+
 @keyframes scroll-top-anim{
 	0%{right: -100%;}
 	100%{right: 20px;}
@@ -156,6 +364,18 @@ body.lock {
 .swiper-container {
 	width: calc(100% - 260px);
 	height: 720px;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
 
 	@include media ('<desktop_lg') {
 		height: 660px;
@@ -174,11 +394,24 @@ body.lock {
 }
 
 .swiper-slide-image {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	position: relative;
 	width: 100%;
 	height: 100%;
+
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		object-position: center;
+		font-family: 'object-fit: cover; object-position: center;';
+
+		@include media ('<tb') {
+			object-position: 25%;
+		}
+	}
 }
 
 .swiper-pagination-bullets {
@@ -186,6 +419,11 @@ body.lock {
 	transform: none !important;
 	bottom: 0;
 	right: 29px !important;
+	left: auto !important;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 
 	display: -ms-flexbox;
 	-ms-flex-direction: column;
@@ -221,7 +459,7 @@ body.lock {
 	}
 
 	@include media ('<tb') {
-		margin-bottom: 10px !important;
+		margin: 0 0px 13px 0px !important;
 		width: 8px;
 		height: 8px;
 	}

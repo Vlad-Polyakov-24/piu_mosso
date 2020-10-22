@@ -5,17 +5,15 @@
 	width: 100%;
 	z-index: 50;
 
-	/* &.header-scroll {
-		position: fixed;
-		top: 0;
-		left: 0;
-		animation: header .5s;
-	} */
-
 	&__contacts-list {
 		display: flex;
 		justify-content: space-between;
-		padding: 11px 0;
+		padding: 6px 0;
+		align-items: center;
+
+		@include media ('<desktop_lg') {
+			padding: 5px 0;
+		}
 
 		@include media ('<dt-min') {
 			position: relative;
@@ -24,6 +22,8 @@
 			margin-right: -30px;
 			align-items: center;
 			padding: 0;
+			background-color: #1A2E53;
+			z-index: 51;
 		}
 
 		@include media ('<tb') {
@@ -80,10 +80,14 @@
 	}
 
 	&__logo {
-		background: url('/images/header/logo.svg') 50%/195px no-repeat;
+		background-image: url('/images/header/logo.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
 		text-indent: -9999px;
 		overflow: hidden;
 		width: 195px;
+		height: 38px;
 		display: block;
 		cursor: pointer;
 
@@ -148,10 +152,10 @@
 			transition: all 0.3s ease 0s;
 			overflow: auto;
 			z-index: 50;
+			display: block;
 
 				&.active {
 					top: 0;
-					display: block;
 				}
 		}
 	}

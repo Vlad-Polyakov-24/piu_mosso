@@ -51,12 +51,16 @@
 }
 
 .loaded .preloader {
-	right: -200%;
-	transition: .5s;
+	transform: translateX(200%);
+	transition: .9s;
 	visibility: hidden;
+	animation: none;
 
 	.preloader__row {
 		animation: scale-pre-rev 0.2s linear both;
+	}
+	.preloader__item {
+		animation: none;
 	}
 }
 

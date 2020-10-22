@@ -1,0 +1,87 @@
+.photo-gallery {
+	background: url('/images/concept/concept-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+
+	&.sc-pd {
+		padding-top: 53px;
+
+		@include media ('<desktop_lg') {
+			padding-top: 60px;	
+		}
+
+		@include media ('<tb') {
+			padding-top: 40px;	
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+
+		@include media ('<desktop_lg') {
+			margin: -10px;
+		}
+
+		@include media ('<tb') {
+			margin: -5px;
+		}
+	}
+
+	&__list-item {
+		width: 33.333%;
+		padding: 15px;
+
+		@include media ('<desktop_lg') {
+			padding: 10px;
+		}
+
+		@include media ('<tb') {
+			padding: 5px;
+			width: 50%;
+		}
+	}
+
+	&__list-item-image {
+		position: relative;
+		height: 0;
+		padding-bottom: calc(360 / 360 * 100%);
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			object-fit: cover;
+			object-position: center;
+			font-family: 'object-fit: cover; object-position: center;';
+		}
+	}
+
+	.btn-ico {
+		position: absolute;
+		right: 38px;
+	}
+
+	.btn {
+		margin-top: 40px;
+
+		span {
+			&:first-child {
+				padding-right: 60px;
+			}
+		}
+
+		@include media ('<desktop_lg') {
+			margin-top: 30px;
+		}
+
+		@include media ('<tb') {
+			margin-top: 20px;
+		}
+	}
+}

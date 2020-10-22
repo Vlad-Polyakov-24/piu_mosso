@@ -5,17 +5,15 @@ window.jQuery = $;
 
 import objectFitImages from 'object-fit-images';
 
-import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
-Swiper.use([Navigation, Pagination, Autoplay]);
+require('@fancyapps/fancybox');
+require('@fancyapps/fancybox/dist/jquery.fancybox.css');
+
+import Swiper, { Navigation, Pagination, Autoplay, EffectFade } from 'swiper';
+Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
 import 'swiper/swiper-bundle.css';
 
-/*HEADER*/
-/* $(window).scroll(function () {
-	var top = $(document).scrollTop();
-	if (top < 900) $(".header").removeClass('header-scroll');
-	else $(".header").addClass('header-scroll');
-}); */
-/*=======*/
+import 'simplebar';
+import 'simplebar/dist/simplebar.css';
 
 /*preloader*/
 window.onload = function () {
@@ -50,12 +48,12 @@ $('.header__menu-link').click(function (event) {
 /*SWIPER*/
 const swiper = new Swiper('.swiper-container', {
 	slidesPerView: 1,
-	/* 	loop: true,
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false,
-		}, */
-	direction: 'vertical',
+	loop: true,
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	},
+	effect: 'fade',
 	pagination: {
 		el: '.swiper-pagination',
 		type: 'bullets',
@@ -78,5 +76,10 @@ $(document).ready(function ($) {
 	$window.resize(resize).trigger('resize');
 });
 /*========*/
+
+$('[data-fancybox="images"]').fancybox({
+	// Options will go here
+	loop: false,
+});
 
 objectFitImages();

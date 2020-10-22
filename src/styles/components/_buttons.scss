@@ -26,20 +26,31 @@
 	// defaults
 	cursor: pointer;
 	outline: none;
+	box-shadow: none;
 
 	@at-root :root.hover &:hover{
 		background-color: $ginger;
 		color: #FFF4E2;
 
-		svg,path {
+		.btn-ico svg,path {
 			fill: #FFF4E2;
-			transition: all 0.4s ease 0s;
 		}
 	}
 
 	&:active {
 		filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.25));
 		transition: all 0.1s ease 0s;
+	}
+
+	.btn-ico {
+		flex-shrink: 0;
+		width: 32px;
+
+		svg,path {
+			display: block;
+			width: 100%;
+			transition: .4s;
+		}
 	}
 
 	@include media ('<desktop_lg') {
