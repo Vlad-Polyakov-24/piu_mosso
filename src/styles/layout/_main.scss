@@ -501,7 +501,7 @@
 		flex-wrap: wrap;
 		margin-bottom: 20px;
 		max-width: 704px;
-		margin: 0 auto 10px;
+		margin: 0 auto 6px;
 
 		@include media ('<desktop_lg') {
 			margin-bottom: 7px;
@@ -698,13 +698,20 @@
 
 	.section-title {
 		margin-bottom: 10px;
+		padding-top: 75px;
 
 		@include media ('<desktop_lg') {
 			margin-bottom: 30px;
+			padding-top: 59px;
+		}
+
+		@include media ('<dt-min') {
+			padding-top: 56px;
 		}
 		
 		@include media ('<tb') {
 			margin-bottom: 20px;
+			padding-top: 45px;
 		}
 	}
 
@@ -728,7 +735,7 @@
 		}
 
 		@include media ('<dt-min') {
-			padding-bottom: 61px;
+			padding-bottom: 59px;
 		}
 
 		@include media ('<tb') {
@@ -1053,7 +1060,7 @@
 	}
 
 	.section-title {
-		margin-bottom: 20px;
+		margin-bottom: 22px;
 
 		@include media ('<desktop_lg') {
 			margin-bottom: 10px;
@@ -2500,7 +2507,6 @@
 	}
 
 	&.sc-pd {
-		padding-bottom: 79px;
 
 		@include media ('<desktop_lg') {
 			padding-bottom: 59px;
