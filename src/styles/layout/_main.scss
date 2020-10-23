@@ -2600,6 +2600,19 @@
 
 		@include media ('<desktop_lg') {
 			margin-bottom: 0;
+			justify-content: space-around;
+		}
+
+		@include media ('<=dt-min') {
+			justify-content: space-between;
+		}
+
+		@include media ('<dt-min') {
+			justify-content: space-around;
+		}
+
+		@include media ('<=tb') {
+			justify-content: space-between;
 		}
 
 		@include media ('<tb') {
