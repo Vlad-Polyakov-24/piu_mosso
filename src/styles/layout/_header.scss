@@ -1,5 +1,4 @@
 /* header */
-
 .header {
 	background-color: #1A2E53;
 	width: 100%;
@@ -194,11 +193,10 @@
 
 		@include media ('<dt-min') {
 			flex-direction: column;
-			margin: 0;
+			margin: -15px 0px;
 			padding: 80px 0 0 75px;
 
 			li {
-				margin-bottom: 30px;
 
 				&:first-child {
 					&::before {
@@ -243,8 +241,9 @@
 		}
 
 		@include media ('<dt-min') {
-			padding: 0;
+			padding: 15px 0px;
 			height: auto;
+			display: inline-block;
 		}
 	}
 

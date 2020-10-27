@@ -2401,8 +2401,6 @@
 
 	&__list {
 		display: flex;
-		overflow: hidden;
-		justify-content: center;
 	}
 
 	&__item {
@@ -2660,6 +2658,9 @@
 			top: 0;
 			left: 0;
 			position: absolute;
+		}
+
+		img {
 			object-fit: cover;
 			object-position: center;
 			font-family: 'object-fit: cover; object-position: center;';
